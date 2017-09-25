@@ -9,32 +9,35 @@
 
 <body class="page">
   <header class="page-header">
-    <a class="page-header__logo">
-      <img class="page-header__logo-image" src="http://placehold.it/88x35" width="88" height="35" alt="MISHKA">
-    </a>
+    <section class="page-header__navigation">
+      <div class="page-header__container">
+        <a class="page-header__logo">
+          <img class="page-header__logo-image" src="http://placehold.it/88x35" width="88" height="35" alt="MISHKA">
+        </a>
+        <ul class="page-header__navigation main-navigation">
+          <li class="main-navigation__item">Каталог товаров</li>
+          <li class="main-navigation__item">Вязание на заказ</li>
+          <li class="main-navigation__item">Поиск по сайту</li>
+          <li class="main-navigation__item">Корзина: пока пуста</li>
+        </ul>
+      </div>
+    </section>
     <a class="page-header__menu" href="#">
       <img class="page-header__menu-image" src="http://placehold.it/21x19" width="21" height="19" alt="menu">
     </a>
   </header>
   <main class="page-main">
-    <section class="background">
-      <img class="background__image" src="http://placehold.it/230x284" width="230" height="284" alt="">
-      <div class="background__text">
-        <h1 class="background__title">Милые штуки ручной работы для дома</h1>
-      </div>
-    </section>
     <section class="goods">
+      <div class="goods__text">
+        <h1 class="goods__title">Милые штуки ручной работы для дома</h1>
+      </div>
       <div class="goods__container">
         <ul class="goods__nav">
           <li class="goods__item goods__item--interior">
-            <a href="#"> Предметы интерьера
-              <img src="http://placehold.it/62x65" width="62" height="65" alt="">
-            </a>
+            <a href="#">Предметы интерьера</a>
           </li>
           <li class="goods__item goods__item--toys">
-            <a href="#">Детские игрушки
-              <img src="http://placehold.it/62x65" width="62" height="65" alt="">
-            </a>
+            <a href="#">Детские игрушки</a>
           </li>
         </ul>
       </div>
@@ -60,11 +63,9 @@
         <div class="goods-popular__image">
           <img src="http://placehold.it/260x317" width="260" height="314" alt="вязаные корзинки">
         </div>
-        <div class="goods-popular__price">
-          <p>Цена: 990 рублей</p>
-        </div>
         <div class="goods-popular__offer">
-          <button class="goods-popular__offer-button btn">Заказать</button>
+          <p class="goods-popular__price">Цена: 990 рублей</p>
+          <button class="goods-popular__button btn">Заказать</button>
         </div>
       </div>
     </section>
@@ -73,27 +74,21 @@
         <h2 class="about-us__title">Коротко о нас:</h2>
         <ul class="about-us__list">
           <li class="about-us__item">
-            <img src="http://placehold.it/32x38" width="32" height="38" alt="">
             <p>Экологически чистые материалы</p>
           </li>
           <li class="about-us__item">
-            <img src="http://placehold.it/48x30" width="48" height="30" alt="">
             <p>Скандинавский стиль по российской цене</p>
           </li>
           <li class="about-us__item">
-            <img src="http://placehold.it/34x28" width="34" height="28" alt="">
             <p>Увеличивает лайки на фотографиях</p>
           </li>
           <li class="about-us__item">
-            <img src="http://placehold.it/39x35" width="39" height="35" alt="">
             <p>Связано вручную с любовью и умилением</p>
           </li>
           <li class="about-us__item">
-            <img src="http://placehold.it/57x28" width="57" height="28" alt="">
             <p>Поддержка отечественного производителя</p>
           </li>
           <li class="about-us__item">
-            <img src="http://placehold.it/38x34" width="38" height="34" alt="">
             <p>Поставляется в подарочной упаковке</p>
           </li>
         </ul>
@@ -110,14 +105,10 @@
           <a class="reviews__link" href="#">@misssssiskras</a>
         </blockquote>
         <div class="reviews__slider">
-          <a class="reviews__slider-button" href="#">
-            <img src="http://placehold.it/130x50" width="130" height="50" alt="лево">
-          </a>
-          <a class="reviews__slider-button" href="#">
-            <img src="http://placehold.it/130x50" width="130" height="50" alt="право">
-          </a>
+          <button class="reviews__slider-button btn"></button>
+          <button class="reviews__slider-button btn"></button>
         </div>
-        <button class="reviews__button btn">Написать</button>
+        <a class="reviews__button btn" href="#">Написать</a>
       </div>
     </section>
     <section class="contacts">
@@ -128,7 +119,7 @@
             <p class="email__title">e-mail:</p>
             <a href="#" class="email__link">info@mimimishkashop.ru</a>
           </div>
-          <div class="contacts__adress">
+          <div class="contacts__address">
             <p class="adress__title">адрес:</p>
             <p class="adress__description">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</p>
           </div>
@@ -137,7 +128,7 @@
       <div class="contacts__map">
         <img src="http://placehold.it/320x458" width="320" height="458" alt="карта">
       </div>
-      <div class="contacts__button__container">
+      <div class="contacts__button contacts__container">
         <a class="contacts__button btn" href="#">Напишите нам</a>
       </div>
     </section>
@@ -145,14 +136,13 @@
   <footer class="page-footer">
     <div class="page-footer__container">
       <div class="footer__social">
-        <a class="social__button social__button--instagram" href="#">Instagram<img class="social__button--instagram__icon" src="http://placehold.it/24x24" width="24" height="24" alt="Instagram"></a>
-        <a class="social__button social__button--facebook" href="#">Facebook<img class="social__button--facebook__icon" src="http://placehold.it/17x28" width="17" height="28" alt="Facebook"></a>
-        <a class="social__button social__button--twitter" href="#">Twitter<img class="social__button--twitter__icon" src="http://placehold.it/25x22" width="25" height="22" alt="Twitter"></a>
+        <a class="social__button social__button--instagram" href="#">Instagram</a>
+        <a class="social__button social__button--facebook" href="#">Facebook</a>
+        <a class="social__button social__button--twitter" href="#">Twitter</a>
       </div>
       <div class="footer__copyright">
-        <a class="footer__copyright__link" href="https://htmlacademy.ru/">
-          <span>Разработано</span>
-          <img src="http://placehold.it/26x35" width="26" height="35" alt="HTML Academy">HTML Academy
+        <a class="footer__copyright-link" href="https://htmlacademy.ru/">
+          <span>Разработано</span> HTML Academy
         </a>
       </div>
     </div>
