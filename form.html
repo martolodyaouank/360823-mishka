@@ -22,9 +22,6 @@
         </ul>
       </div>
     </section>
-    <a class="page-header__menu" href="#">
-      <img class="page-header__menu-image" src="http://placehold.it/21x19" width="21" height="19" alt="menu">
-    </a>
   </header>
   <main class="page-main">
     <section class="offer">
@@ -38,18 +35,18 @@
       </div>
     </section>
     <form class="offer-form">
-      <div class="offer-form__type">
+      <div class="offer-form__item offer-form__item--type">
         <div class="offer-form__container">
           <p class="offer-form__title">Тип</p>
           <div class="offer-form__wrapper">
             <div class="offer-form__radio">
-              <label class="form-radio__button">
+              <label class="offer-form__button offer-form__button--radio">
                   <input type="radio" name="radio" id="accessory" checked>
                   Аксессуар для  интерьера
                 </label>
             </div>
             <div class="offer-form__radio">
-              <label class="form-radio__button">
+              <label class="offer-form__button offer-form__button--radio">
                   <input type="radio" name="radio" id="toy">
                   Детская игрушка
                 </label>
@@ -57,42 +54,42 @@
           </div>
         </div>
       </div>
-      <div class="offer-form__color">
+      <div class="offer-form__item offer-form__item--color">
         <div class="offer-form__container">
           <p class="offer-form__title">Цвет</p>
           <div class="offer-form__wrapper">
             <div class="offer-form__checkbox">
-              <label class="form-checkbox__button">
+              <label class="offer-form__button offer-form__button--checkbox">
                   <input type="checkbox" name="checkbox" id="white" checked>
                   Белый
                 </label>
             </div>
             <div class="offer-form__checkbox">
-              <label class="form-checkbox__button">
+              <label class="offer-form__button offer-form__button--checkbox">
                   <input type="checkbox" name="checkbox" id="grey" checked>
                   Серый
                 </label>
             </div>
             <div class="offer-form__checkbox">
-              <label class="form-checkbox__button">
+              <label class="offer-form__button offer-form__button--checkbox">
                   <input type="checkbox" name="checkbox" id="tiffany">
                   "Тиффани"
                 </label>
             </div>
             <div class="offer-form__checkbox">
-              <label class="form-checkbox__button">
+              <label class="offer-form__button offer-form__button--checkbox">
                   <input type="checkbox" name="checkbox" id="black">
                   Черный
                 </label>
             </div>
             <div class="offer-form__checkbox">
-              <label class="form-checkbox__button">
+              <label class="offer-form__button offer-form__button--checkbox">
                   <input type="checkbox" name="checkbox" id="pink">
                   Розовый
                 </label>
             </div>
             <div class="offer-form__checkbox">
-              <label class="form-checkbox__button">
+              <label class="offer-form__button offer-form__button--checkbox">
                   <input type="checkbox" name="checkbox" id="orange">
                   Оранжевый
                 </label>
@@ -100,24 +97,24 @@
           </div>
         </div>
       </div>
-      <div class="offer-form__name">
+      <div class="offer-form__item offer-form__item--info-names">
         <div class="offer-form__container">
           <p class="offer-form__title">ФИО</p>
           <div class="offer-form__wrapper">
-            <div class="offer-form__text">
-              <label class="form-text__info">
+            <div class="offer-form__info">
+              <label class="offer-form__text offer-form__text--names">
                   Имя
                   <input type="text" name="text" id="name" placeholder="Введите ваше имя*" required>
                 </label>
             </div>
-            <div class="offer-form__text">
-              <label class="form-text__info">
+            <div class="offer-form__info">
+              <label class="offer-form__text offer-form__text--names">
                   Фамилия
                   <input type="text" name="text" id="surname" placeholder="Укажите фамилию*" required>
                 </label>
             </div>
-            <div class="offer-form__text">
-              <label class="form-text__info">
+            <div class="offer-form__info">
+              <label class="offer-form__text offer-form__text--names">
                   Отчество
                   <input type="text" name="text" id="middle-name" placeholder="Отчество, если желаете">
                 </label>
@@ -125,39 +122,39 @@
           </div>
         </div>
       </div>
-      <div class="offer-form__phone">
+      <div class="offer-form__item offer-form__item--phone">
         <div class="offer-form__container">
           <p class="offer-form__title">Тел</p>
           <div class="offer-form__wrapper">
-            <div class="offer-form__text">
+            <div class="offer-form__text offer-form__text--phone">
               <input type="text" name="text" id="phone-number" placeholder="+7 ХХХ ХХ ХХ*" required>
             </div>
           </div>
         </div>
       </div>
-      <div class="offer-form__mail">
+      <div class="offer-form__item offer-form__item--mail">
         <div class="offer-form__container">
           <p class="offer-form__title">E-mail</p>
           <div class="offer-form__wrapper">
-            <div class="offer-form__text">
+            <div class="offer-form__text offer-form__text--mail">
               <input type="email" name="email" id="email" placeholder="Ваш Email*" required>
             </div>
           </div>
         </div>
       </div>
-      <div class="offer-form__additional">
+      <div class="offer-form__item offer-form__item--extra">
         <div class="offer-form__container">
           <p class="offer-form__title">Доп</p>
           <div class="offer-form__wrapper">
-            <div class="offer-form__text">
-              <textarea name="textarea" id="additional" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            <div class="offer-form__text offer-form__text--extra">
+              <textarea name="textarea" id="extra" placeholder="Опишите все ваши пожелания к заказу"></textarea>
               <p class="offer-form__explanatory-text">*Поля обязательны для заполнения</p>
             </div>
           </div>
         </div>
       </div>
       <div class="offer-form__container">
-        <button class="offer-form__button btn" type="submit">Отправить заказ</button>
+        <button class="offer-form__button offer-form__button--submit btn" type="submit">Отправить заказ</button>
       </div>
     </form>
   </main>
