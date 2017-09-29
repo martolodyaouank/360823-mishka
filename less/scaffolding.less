@@ -19,6 +19,14 @@ body {
   width: 320px;
   margin-left: auto;
   margin-right: auto;
+
+  @media (min-width:@width-tablet) {
+    width:@width-tablet;
+  }
+
+  @media (min-width:@width-desktop) {
+    width:@width-desktop;
+  }
 }
 
 a {
@@ -44,4 +52,12 @@ li {
   width: 260px;
   margin-left: auto;
   margin-right: auto;
+
+  @media (min-width: @width-tablet) {
+    width: 668px;
+  }
+
+  @media (min-width:@width-desktop) {
+    width: 1050px;
+  }
 }
