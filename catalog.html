@@ -5,12 +5,13 @@
   <meta charset="utf-8">
   <title>HTML Academy: MISHKA</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="page">
   <header class="page-header">
     <section class="page-header__navigation">
-      <div class="page-header__container">
+      <div class="page-header__container container">
         <a class="page-header__logo">
           <img class="page-header__logo-image" src="http://placehold.it/88x35" width="88" height="35" alt="MISHKA">
         </a>
@@ -38,12 +39,12 @@
       </div>
     </section>
     <section class="products">
-      <div class="products__container">
+      <div class="products__container container">
         <div class="products__item">
           <a class="products__image-link" href="#">
-            <img class="products__image" src="http://placehold.it/260x197" width="260" height="197" alt="Зайчик-попрыгайчик">
+            <img class="products__image" src="img/photo-hare-mobile@1x.jpg" width="260" height="197" alt="Зайчик-попрыгайчик">
           </a>
-          <div class="products-info__container">
+          <div class="products-info__container container">
             <a class="products__title-link"><h2 class="products__title">Зайчик-попрыгайчик</h2></a>
             <p class="products__description">Рост 30 см, вес 200 г</p>
             <div class="products__offer">
@@ -54,9 +55,9 @@
         </div>
         <div class="products__item">
           <a class="products__image-link" href="#">
-            <img class="products__image" src="http://placehold.it/260x197" width="260" height="197" alt="Корзинка для белья">
+            <img class="products__image" src="img/photo-bowl-mobile@1x.jpg" width="260" height="197" alt="Корзинка для белья">
           </a>
-          <div class="products-info__container">
+          <div class="products-info__container container">
             <a class="products__title-link"><h2 class="products__title">Корзинка для белья</h2></a>
             <p class="products__description">Диаметр 15 см, высота 10 см</p>
             <div class="products__offer">
@@ -67,9 +68,9 @@
         </div>
         <div class="products__item">
           <a class="products__image-link" href="#">
-            <img class="products__image" src="http://placehold.it/260x197" width="260" height="197" alt="Большая корзинка для игрушек">
+            <img class="products__image" src="img/photo-toys-mobile@1x.jpg" width="260" height="197" alt="Большая корзинка для игрушек">
           </a>
-          <div class="products-info__container">
+          <div class="products-info__container container">
             <a class="products__title-link"><h2 class="products__title">Большая корзинка для игрушек</h2></a>
             <p class="products__description">Диаметр 30 см, высота 30 см</p>
             <div class="products__offer">
@@ -80,35 +81,35 @@
         </div>
       </div>
     </section>
-    <section class="production">
+    <section class="production container">
       <div class="production__headline">
         <h2 class="production__headline-title">Процесс производства</h2>
       </div>
       <div class="production__video">
-        <img class="production__video-image" src="http://placehold.it/260x150" width="260" height="150" alt="Видео производства">
+        <img class="production__video-image" src="img/video-mobile@1x.jpg" width="260" height="150" alt="Видео производства">
       </div>
-      <div class="production__description production__container">
+      <div class="production__description production__container container">
         <p class="production_description-text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
         <a class="production__description-button btn" href="#">Сделать заказ</a>
       </div>
     </section>
   </main>
   <footer class="page-footer">
-    <div class="page-footer__container">
-      <div class="footer__social">
-        <a class="social__button social__button--instagram" href="#">Instagram</a>
-        <a class="social__button social__button--facebook" href="#">Facebook</a>
-        <a class="social__button social__button--twitter" href="#">Twitter</a>
+    <div class="page-footer__container container">
+      <div class="page-footer__social">
+        <a class="page-footer__button page-footer__button--instagram" href="#">Instagram</a>
+        <a class="page-footer__button page-footer__button--facebook" href="#">Facebook</a>
+        <a class="page-footer__button page-footer__button--twitter" href="#">Twitter</a>
       </div>
-      <div class="footer__copyright">
-        <a class="footer__copyright-link" href="https://htmlacademy.ru/">
-          <span>Разработано</span> HTML Academy
+      <div class="page-footer__copyright">
+        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/">
+          Разработано <span>HTML Academy</span>
         </a>
       </div>
     </div>
   </footer>
-  <section class="goods-popup">
-    <h3 class="goods-popup">Добавить в корзину</h3>
+  <section class="goods-popup container">
+    <h3 class="goods-popup__title">Добавить в корзину</h3>
     <form class="goods-popup__form">
       <div class="goods-popup__form-wrapper">
         <p class="goods-popup__form-title">Выберите размер:</p>
@@ -125,7 +126,7 @@
           L
         </label>
       </div>
-      <button class="goods-popup__button btn" type="submit">Добавить</button>
+      <button class="goods-popup__button" type="submit">Добавить</button>
     </form>
   </section>
 </body>
