@@ -1,0 +1,63 @@
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  font-family: "Open Sans", "Arial", sans-serif;
+  margin: 0;
+  color: @text-color;
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width:@width-tablet) {
+    width:@width-tablet;
+  }
+
+  @media (min-width:@width-desktop) {
+    width:@width-desktop;
+  }
+}
+
+a {
+  color: @text-color;
+  text-decoration: none;
+
+  &:hover {
+    color: fade(@text-color, 60%);
+    text-decoration: none;
+  }
+
+  &:active {
+    color: fade(@text-color, 30%);
+    text-decoration: none;
+  }
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  width: 260px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: @width-tablet) {
+    width: 668px;
+  }
+
+  @media (min-width:@width-desktop) {
+    width: 1050px;
+  }
+}
