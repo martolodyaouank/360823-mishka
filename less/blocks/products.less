@@ -1,0 +1,128 @@
+.products {
+  padding-top: 30px;
+  background-color: @white;
+
+  @media (min-width: @width-tablet) {
+    padding-top: 70px;
+  }
+
+  @media (min-width: @width-desktop) {
+    padding-top: 110px;
+  }
+}
+
+.products__container {
+  @media (min-width: @width-desktop) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.products-info__wrapper {
+  @media (min-width: @width-desktop) {
+    min-height: 124px;
+  }
+}
+
+.products__item {
+  margin-bottom: 30px;
+  border: 1px solid @grey-93;
+
+  &:hover {
+    box-shadow: 0 0 10px 0 @grey-90;
+  }
+
+  &:active {
+    box-shadow: 0 0 5px 0 @grey-90;
+  }
+
+  @media (min-width: @width-tablet) {
+    display: flex;
+    width: 668px;
+    height: 334px;
+  }
+
+  @media (min-width: @width-desktop) {
+    display: inline-block;
+    width: 317px;
+    min-height: 662px;
+  }
+}
+
+.products__image {
+  @media (min-width: @width-tablet) {
+    width: 334px;
+    min-height: 334px;
+    background-color: @grey-95;
+  }
+
+  @media (min-width: @width-desktop) {
+    width: 316px;
+    min-height: 462px;
+    background-color: @grey-95;
+  }
+}
+
+.products__title {
+  color: @text-color--dark;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+
+  @media (min-width: @width-tablet) {
+    font-size: 20px;
+  }
+}
+
+.products__description {
+  font-size: 13px;
+  line-height: 30px;
+
+  @media (min-width: @width-tablet) {
+    font-size: 15px;
+  }
+}
+
+.products__offer {
+  border-top: 1px solid @grey-93;
+  width: 206px;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: @width-tablet) {
+    width: 272px;
+  }
+
+  @media (min-width: @width-desktop) {
+    width: 260px;
+  }
+}
+
+.products__price {
+  color: @text-color--dark;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: bold;
+
+  @media (min-width: @width-tablet) {
+    font-size: 17px;
+  }
+}
+
+.products-info__container {
+  padding-left: 28px;
+  min-width: 206px;
+
+  @media (min-width: @width-tablet) {
+    width: 334px;
+    min-height: 334px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  @media (min-width: @width-desktop) {
+    width: 315px;
+    min-height: 197px;
+  }
+}

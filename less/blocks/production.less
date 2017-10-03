@@ -1,0 +1,140 @@
+.production {
+  border: 1px solid @grey-93;
+  padding-bottom: 33px;
+  margin-bottom: 58px;
+
+  &:hover {
+    box-shadow: 0 0 10px 0 @grey-90;
+  }
+
+  &:active {
+    box-shadow: 0 0 5px 0 @grey-90;
+  }
+
+  @media (min-width: @width-tablet) {
+    position: relative;
+    width: 668px;
+    height: 746px;
+  }
+
+  @media (min-width: @width-desktop) {
+    position: relative;
+    width: 1050px;
+    height: 460px;
+  }
+}
+
+.production__wrapper {
+  @media (min-width: @width-tablet) {
+    position: relative;
+    display: block;
+    width: 668px;
+    min-height: 290px;
+    padding-top: 456px;
+  }
+
+  @media (min-width: @width-desktop) {
+    position: relative;
+    display: block;
+    width: 368px;
+    min-height: 455px;
+    padding-top: 0;
+    padding-left: 682px;
+  }
+}
+
+
+.production__headline-title {
+  display: inline-block;
+  margin-left: 80px;
+  width: 131px;
+  color: @text-color--dark;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+
+  @media (min-width: @width-tablet) {
+    width: 250px;
+    font-size: 20px;
+    padding-top: 38px;
+    margin-left: 105px;
+  }
+
+  @media (min-width: @width-desktop) {
+    width: 158px;
+    font-size: 20px;
+    padding-top: 38px;
+    margin-left: 80px;
+  }
+}
+
+.production__container {
+  @media (min-width: @width-tablet) {
+    padding-top: 0;
+    padding-left: 40px;
+  }
+
+  @media (min-width: @width-desktop) {
+    padding-top: 0;
+    padding-left: 80px;
+  }
+}
+
+.production_description-text {
+  font-size: 13px;
+  line-height: 24px;
+  padding-left: 28px;
+  width: 187px;
+
+  @media (min-width: @width-tablet) {
+    font-size: 15px;
+    line-height: 30px;
+    width: 585px;
+    padding: 0;
+  }
+
+  @media (min-width: @width-desktop) {
+    font-size: 15px;
+    line-height: 30px;
+    width: 238px;
+    padding: 0;
+  }
+}
+
+.production__video-image {
+  @media (min-width: @width-tablet) {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 460px;
+  }
+
+  @media (min-width: @width-desktop) {
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+    width: 682px;
+    height: 100%;
+  }
+}
+
+.production__description-button {
+  margin-left: 28px;
+  width: 191px;
+  height: 53px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  @media (min-width: @width-tablet) {
+    width: 585px;
+    margin-top: 20px;
+    margin-left: 0;
+  }
+
+  @media (min-width: @width-desktop) {
+    width: 231px;
+    margin-top: 40px;
+    margin-left: 0;
+  }
+}

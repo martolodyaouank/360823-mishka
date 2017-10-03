@@ -1,0 +1,164 @@
+.page-header {
+  background-color: @white;
+  min-height: 78px;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-header__logo {
+  min-height: 78px;
+
+  img {
+    display: block;
+    max-width: 100%;
+    max-height: 78px;
+  }
+}
+
+.page-header__logo-wrapper {
+  padding-left: 110px;
+}
+
+.main-navigation {
+  padding: 0;
+  margin: 0;
+}
+
+.main-navigation__item {
+  border-bottom: 1px solid @grey-93;
+  min-height: 78px;
+}
+
+.main-navigation__link {
+  display: inline-block;
+  padding-left: 76px;
+  padding-top: 30px;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+  color: @text-color--dark;
+}
+
+.main-navigation-extra {
+  display: none;
+}
+
+.page-header__navigation-link {
+  display: none;
+}
+
+@media (min-width: @width-tablet) {
+  .page-header {
+    width: 100%;
+    height: 126px;
+  }
+
+  .page-header__navigation {
+
+    .container();
+    height: 180px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .page-header__button {
+    display: none;
+  }
+
+  .main-navigation {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .main-navigation-extra {
+    display: none;
+  }
+
+  .main-navigation-catalog {
+    margin-top: 0;
+  }
+
+  .main-navigation__link--catalog {
+    font-size: 15px;
+    padding-left: 0;
+  }
+
+  .main-navigation__link--order {
+    font-size: 15px;
+  }
+
+  .page-header__logo-wrapper {
+    padding-left: 0;
+    order: -2;
+  }
+
+  .main-navigation-order {
+    order: -1;
+  }
+
+  .main-navigation__item {
+    border: none;
+    height: 125px;
+
+    &:first-child {
+      border: none;
+    }
+  }
+
+  .main-navigation-order__item--search {
+    font-size: 0;
+    outline: 1px solid red;
+    width: 84px;
+  }
+
+  .main-navigation__link--search {
+    font-size: 0;
+  }
+
+  .page-header__navigation-link {
+    display: inline-block;
+    font-size: 15px;
+    line-height: 24px;
+    padding-top: 30px;
+  }
+}
+
+@media (min-width: @width-desktop) {
+  .main-navigation-catalog {
+    order: -3;
+  }
+
+  .page-header__logo-wrapper {
+    order: -2;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .main-navigation-order {
+    order: -1;
+  }
+
+  .main-navigation-extra {
+    order: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .main-navigation__link--new {
+    font-size: 15px;
+    padding-left: 0;
+  }
+
+  .main-navigation__link--sale {
+    font-size: 15px;
+  }
+
+  .main-navigation__link--catalog {
+    font-size: 17px;
+  }
+
+  .main-navigation__link--order {
+    font-size: 17px;
+  }
+}

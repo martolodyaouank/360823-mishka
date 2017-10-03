@@ -1,0 +1,23 @@
+.offer-info__text {
+  font-size: 13px;
+  line-height: 24px;
+}
+
+/*Для ширины планшета*/
+@media (min-width: @width-tablet) {
+  .offer-info__container {
+    width: 668px;
+  }
+
+  .offer-info__text /*+ для компьютера*/ {
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
+
+/*Для ширины компьютера*/
+@media (min-width: @width-desktop) {
+  .offer-info__container {
+    width: 700px;
+  }
+}
