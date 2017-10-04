@@ -11,7 +11,6 @@
 }
 
 .goods__text {
-  .container();
   height: 283px;
 }
 
@@ -54,10 +53,6 @@
   }
 }
 
-.goods__link-container {
-  .container();
-}
-
 .goods__item--interior {
   background-color: @aqua;
 
@@ -83,7 +78,7 @@
 }
 
 /*Для ширины планшета*/
-@media @width-tablet {
+@media (min-width: @width-tablet) {
   .goods__text {
     height: 630px;
   }
@@ -112,7 +107,7 @@
 }
 
 /*Для ширины компьютера*/
-@media @width-desktop {
+@media (min-width: @width-desktop) {
   .goods__title {
     font-size: 53px;
     line-height: 57px;
