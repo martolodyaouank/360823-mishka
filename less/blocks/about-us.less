@@ -1,0 +1,65 @@
+
+.about-us__container {
+  .container();
+  position: relative;
+}
+
+.about-us__title {
+  color: @text-color--dark;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: bold;
+  padding-top: 36px;
+  padding-bottom: 5px;
+}
+
+.about-us__list {
+  padding: 0;
+}
+
+.about-us__item {
+  color: @text-color--dark;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+  padding-top: 35px;
+}
+
+/*Для ширины планшета*/
+@media @width-tablet {
+  .about-us__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .about-us__list /*+ для компьютера*/ {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 450px;
+  }
+
+  .about-us__item /*+ для компьютера*/ {
+    width: 304px;
+    margin-bottom: 46px;
+    padding-right: 30px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+/*Для ширины компьютера*/
+@media @width-desktop {
+  .about-us__container {
+    padding-left: 175px;
+  }
+
+  .about-us__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .about-us__item {
+    width: 320px;
+  }
+}

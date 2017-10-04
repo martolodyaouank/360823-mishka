@@ -1,0 +1,39 @@
+
+.catalog {
+  background-color: @grey-95;
+  min-height: 176px;
+}
+
+.catalog__title {
+  color: @text-color--dark;
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 73px;
+  margin: 0;
+}
+
+/*Для ширины планшета*/
+@media @width-tablet {
+  .catalog {
+    min-height: 230px;
+  }
+
+  .catalog__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+/*Для ширины компьютера*/
+@media @width-desktop {
+  .catalog {
+    min-height: 260px;
+  }
+
+  .catalog__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}

@@ -1,0 +1,254 @@
+.offer-form__container {
+  .container();
+}
+
+.offer-form__title {
+  text-transform: uppercase;
+  color: @aqua;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 16px;
+
+  @media @width-tablet {
+    content: "";
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 5px;
+  }
+
+  @media @width-desktop {
+    margin-left: 50px;
+  }
+}
+
+.offer-form__item--color {
+  @media @width-tablet {
+    background-color: @grey-95;
+    height: 305px;
+  }
+
+  @media @width-desktop {
+    height: 229px;
+  }
+}
+
+.offer-form__item-wrapper {
+  @media @width-tablet {
+    background-color: @grey-95;
+  }
+}
+
+.offer-form__title::after {
+  content: "";
+  position: absolute;
+  width: 198px;
+  height: 1px;
+  margin-left: 25px;
+  margin-top: 8px;
+  background-color: @aqua;
+
+  @media @width-tablet {
+    display: none;
+  }
+}
+
+.offer-form__title--mail::after {
+  width: 179px;
+
+  @media @width-tablet {
+    display: none;
+  }
+}
+
+.offer-form__wrapper--color {
+  @media @width-tablet {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 440px;
+    margin-left: 167px;
+  }
+
+  @media @width-desktop {
+    width: 735px;
+    margin-left: 175px;
+  }
+}
+
+.offer-form__wrapper--names {
+  @media @width-tablet {
+    width: 530px;
+  }
+}
+
+.offer-form__wrapper {
+  @media @width-tablet {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 167px;
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+
+  @media @width-desktop {
+    width: 735px;
+    margin-left: 175px;
+  }
+}
+
+
+.offer-form__button {
+  display: inline-block;
+  color: @text-color--dark;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
+  padding-left: 62px;
+  padding-bottom: 28px;
+
+  @media @width-tablet {
+    width: 440px;
+    font-size: 19px;
+  }
+
+  @media @width-desktop {
+    width: 735px;
+  }
+}
+
+.offer-form__button--checkbox {
+  @media @width-tablet {
+    width: 200px;
+    height: 80px;
+  }
+}
+
+.offer-form__text {
+  color: @text-color--dark;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
+  padding-bottom: 20px;
+
+  @media @width-tablet {
+    font-size: 19px;
+    width: 501px;
+  }
+}
+
+.offer-form__text input {
+  border: none;
+  border-bottom: 2px solid @black;
+  width: 260px;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  margin-bottom: 10px;
+  font-size: 17px;
+  line-height: 18px;
+
+  &::-moz-placeholder {
+    color: fade(@text-color, 30%);
+  }
+
+  &::-webkit-input-placeholder {
+    color: fade(@text-color, 30%);
+  }
+
+  @media @width-tablet {
+    width: 376px;
+    padding-left: 15px;
+    margin-left: 25px;
+  }
+
+  @media @width-desktop {
+    width: 574px;
+    padding-left: 15px;
+    margin-left: 25px;
+  }
+}
+
+.offer-form__item-wrapper input {
+  @media @width-tablet {
+    background-color: @grey-95;
+    margin-left: 0;
+    width: 501px;
+  }
+
+  @media @width-desktop {
+    width: 700px;
+  }
+}
+
+.offer-form__text--names-name input {
+  @media @width-tablet {
+    width: 429px;
+  }
+
+  @media @width-desktop {
+    width: 626px;
+  }
+}
+
+.offer-form__text--extra textarea {
+  width: 242px;
+  height: 142px;
+  border: 2px solid @black;
+  font-size: 17px;
+  line-height: 18px;
+  padding-top: 18px;
+  padding-left: 18px;
+
+  &::-moz-placeholder {
+    color: fade(@text-color, 30%);
+  }
+
+  &::-webkit-input-placeholder {
+    color: fade(@text-color, 30%);
+  }
+
+  @media @width-tablet {
+    width: 501px;
+  }
+
+  @media @width-desktop {
+    width: 700px;
+  }
+}
+
+.offer-form__item--explonatory {
+  @media @width-tablet {
+    width: 668px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+
+  @media @width-desktop {
+    width: 700px;
+  }
+}
+
+.offer-form__explanatory-text {
+  color: @text-color;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: normal;
+
+  @media @width-tablet {
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
+
+.offer-form__button-submit {
+  width: 260px;
+  height: 51px;
+  font-size: 17px;
+  line-height: 16px;
+  margin-bottom: 56px;
+
+  @media @width-tablet {
+    width: 230px;
+  }
+}

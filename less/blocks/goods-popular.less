@@ -1,0 +1,149 @@
+
+.goods-popular {
+  position: relative;
+}
+
+.goods-popular__container {
+  .container();
+  position: relative;
+}
+
+.goods-popular__title {
+  padding-top: 35px;
+  color: @text-color--dark;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+.goods-popular__span {
+  padding-bottom: 30px;
+  color: @aqua;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.goods-popular__description {
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.goods-popular__details {
+  font-size: 15px;
+  line-height: 20px;
+  width: 100%;
+  margin-top: 25px;
+  margin-bottom: 28px;
+  border-collapse: collapse;
+}
+
+.goods-popular__details tr {
+  border-bottom: 1px solid @grey-90;
+}
+
+.goods-popular__details td {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.goods-popular__price {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.goods-popular__button {
+  width: 260px;
+  height: 51px;
+  font-size: 17px;
+  line-height: 20px;
+}
+
+/*Для ширины планшета*/
+@media @width-tablet {
+  .goods-popular-wrapper {
+    padding-right: 378px;
+  }
+
+  .goods-popular__title {
+    margin-bottom: 49px;
+    font-size: 43px;
+    line-height: 53px;
+  }
+
+  .goods-popular__span {
+    position: absolute;
+    top: 50px;
+    right: 22px;
+    width: 80px;
+    text-align: center;
+  }
+
+  .goods-popular__description {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .goods-popular__image {
+    width: 334px;
+    height: 405px;
+    position: absolute;
+    z-index: -1;
+    top: 135px;
+    left: 350px;
+    background-color: @grey-93;
+  }
+
+  .goods-popular__price {
+    font-size: 20px;
+    margin-top: 55px;
+  }
+
+  .goods-popular__button /*+ для компьютера*/ {
+    margin-top: 15px;
+    width: 289px;
+  }
+}
+
+/*Для ширины компьютера*/
+@media @width-desktop {
+  .goods-popular__container {
+    padding-left: 175px;
+  }
+
+  .goods-popular-wrapper {
+    padding-right: 585px;
+  }
+
+  .goods-popular__title {
+    margin-bottom: 49px;
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .goods-popular__span {
+    top: 50px;
+    left: 38px;
+  }
+
+  .goods-popular__description {
+    margin-bottom: 40px;
+  }
+
+  .goods-popular__image {
+    width: 525px;
+    height: 632px;
+    position: absolute;
+    z-index: -1;
+    top: -5px;
+    left: 530px;
+    background-color: @grey-93;
+  }
+
+  .goods-popular__price {
+    margin-top: 110px;
+  }
+}
