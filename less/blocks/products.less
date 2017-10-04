@@ -1,26 +1,27 @@
-
 .products {
   padding-top: 30px;
   background-color: @white;
 
-  @media (min-width: @width-tablet) {
+  @media @width-tablet {
     padding-top: 70px;
   }
 
-  @media (min-width: @width-desktop) {
+  @media @width-desktop {
     padding-top: 110px;
   }
 }
 
 .products__container {
-  @media (min-width: @width-desktop) {
+  .container();
+
+  @media @width-desktop {
     display: flex;
     justify-content: space-between;
   }
 }
 
 .products-info__wrapper {
-  @media (min-width: @width-desktop) {
+  @media @width-desktop {
     min-height: 124px;
   }
 }
@@ -37,13 +38,13 @@
     box-shadow: 0 0 5px 0 @grey-90;
   }
 
-  @media (min-width: @width-tablet) {
+  @media @width-tablet {
     display: flex;
     width: 668px;
     height: 334px;
   }
 
-  @media (min-width: @width-desktop) {
+  @media @width-desktop {
     display: inline-block;
     width: 317px;
     min-height: 662px;
@@ -51,13 +52,13 @@
 }
 
 .products__image {
-  @media (min-width: @width-tablet) {
+  @media @width-tablet {
     width: 334px;
     min-height: 334px;
     background-color: @grey-95;
   }
 
-  @media (min-width: @width-desktop) {
+  @media @width-desktop {
     width: 316px;
     min-height: 462px;
     background-color: @grey-95;
@@ -70,7 +71,7 @@
   line-height: 24px;
   font-weight: bold;
 
-  @media (min-width: @width-tablet) {
+  @media @width-tablet {
     font-size: 20px;
   }
 }
@@ -79,7 +80,7 @@
   font-size: 13px;
   line-height: 30px;
 
-  @media (min-width: @width-tablet) {
+  @media @width-tablet {
     font-size: 15px;
   }
 }
@@ -90,11 +91,11 @@
   display: flex;
   justify-content: space-between;
 
-  @media (min-width: @width-tablet) {
+  @media @width-tablet {
     width: 272px;
   }
 
-  @media (min-width: @width-desktop) {
+  @media @width-desktop {
     width: 260px;
   }
 }
@@ -105,7 +106,7 @@
   line-height: 24px;
   font-weight: bold;
 
-  @media (min-width: @width-tablet) {
+  @media @width-tablet {
     font-size: 17px;
   }
 }
@@ -114,7 +115,7 @@
   padding-left: 28px;
   min-width: 206px;
 
-  @media (min-width: @width-tablet) {
+  @media @width-tablet {
     width: 334px;
     min-height: 334px;
     display: flex;
@@ -122,7 +123,7 @@
     justify-content: space-around;
   }
 
-  @media (min-width: @width-desktop) {
+  @media @width-desktop {
     width: 315px;
     min-height: 197px;
   }

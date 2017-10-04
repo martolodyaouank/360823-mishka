@@ -4,6 +4,7 @@
 }
 
 .goods-popular__container {
+  .container();
   position: relative;
 }
 
@@ -62,7 +63,7 @@
 }
 
 /*Для ширины планшета*/
-@media (min-width: @width-tablet) {
+@media @width-tablet {
   .goods-popular-wrapper {
     padding-right: 378px;
   }
@@ -108,7 +109,7 @@
 }
 
 /*Для ширины компьютера*/
-@media (min-width: @width-desktop) {
+@media @width-desktop {
   .goods-popular__container {
     padding-left: 175px;
   }

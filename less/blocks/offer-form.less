@@ -1,3 +1,6 @@
+.offer-form__container {
+  .container();
+}
 
 .offer-form__title {
   text-transform: uppercase;
@@ -6,31 +9,31 @@
   font-size: 17px;
   line-height: 16px;
 
-  @media (min-width: @width-tablet) {
+  @media @width-tablet {
     content: "";
     position: absolute;
     margin-top: 40px;
     margin-left: 5px;
   }
 
-  @media (min-width: @width-desktop) {
+  @media @width-desktop {
     margin-left: 50px;
   }
 }
 
 .offer-form__item--color {
-  @media (min-width: @width-tablet) {
+  @media @width-tablet {
     background-color: @grey-95;
     height: 305px;
   }
 
-  @media (min-width: @width-desktop) {
+  @media @width-desktop {
     height: 229px;
   }
 }
 
 .offer-form__item-wrapper {
-  @media (min-width: @width-tablet) {
+  @media @width-tablet {
     background-color: @grey-95;
   }
 }
@@ -44,7 +47,7 @@
   margin-top: 8px;
   background-color: @aqua;
 
-  @media (min-width: @width-tablet) {
+  @media @width-tablet {
     display: none;
   }
 }
@@ -52,13 +55,13 @@
 .offer-form__title--mail::after {
   width: 179px;
 
-  @media (min-width: @width-tablet) {
+  @media @width-tablet {
     display: none;
   }
 }
 
 .offer-form__wrapper--color {
-  @media (min-width: @width-tablet) {
+  @media @width-tablet {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -66,20 +69,20 @@
     margin-left: 167px;
   }
 
-  @media (min-width: @width-desktop) {
+  @media @width-desktop {
     width: 735px;
     margin-left: 175px;
   }
 }
 
 .offer-form__wrapper--names {
-  @media (min-width: @width-tablet) {
+  @media @width-tablet {
     width: 530px;
   }
 }
 
 .offer-form__wrapper {
-  @media (min-width: @width-tablet) {
+  @media @width-tablet {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -88,7 +91,7 @@
     padding-bottom: 60px;
   }
 
-  @media (min-width: @width-desktop) {
+  @media @width-desktop {
     width: 735px;
     margin-left: 175px;
   }
@@ -104,18 +107,18 @@
   padding-left: 62px;
   padding-bottom: 28px;
 
-  @media (min-width: @width-tablet) {
+  @media @width-tablet {
     width: 440px;
     font-size: 19px;
   }
 
-  @media (min-width: @width-desktop) {
+  @media @width-desktop {
     width: 735px;
   }
 }
 
 .offer-form__button--checkbox {
-  @media (min-width: @width-tablet) {
+  @media @width-tablet {
     width: 200px;
     height: 80px;
   }
@@ -128,7 +131,7 @@
   line-height: 18px;
   padding-bottom: 20px;
 
-  @media (min-width: @width-tablet) {
+  @media @width-tablet {
     font-size: 19px;
     width: 501px;
   }
@@ -152,13 +155,13 @@
     color: fade(@text-color, 30%);
   }
 
-  @media (min-width: @width-tablet) {
+  @media @width-tablet {
     width: 376px;
     padding-left: 15px;
     margin-left: 25px;
   }
 
-  @media (min-width: @width-desktop) {
+  @media @width-desktop {
     width: 574px;
     padding-left: 15px;
     margin-left: 25px;
@@ -166,23 +169,23 @@
 }
 
 .offer-form__item-wrapper input {
-  @media (min-width: @width-tablet) {
+  @media @width-tablet {
     background-color: @grey-95;
     margin-left: 0;
     width: 501px;
   }
 
-  @media (min-width: @width-desktop) {
+  @media @width-desktop {
     width: 700px;
   }
 }
 
 .offer-form__text--names-name input {
-  @media (min-width: @width-tablet) {
+  @media @width-tablet {
     width: 429px;
   }
 
-  @media (min-width: @width-desktop) {
+  @media @width-desktop {
     width: 626px;
   }
 }
@@ -204,24 +207,24 @@
     color: fade(@text-color, 30%);
   }
 
-  @media (min-width: @width-tablet) {
+  @media @width-tablet {
     width: 501px;
   }
 
-  @media (min-width: @width-desktop) {
+  @media @width-desktop {
     width: 700px;
   }
 }
 
 .offer-form__item--explonatory {
-  @media (min-width: @width-tablet) {
+  @media @width-tablet {
     width: 668px;
     display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;
   }
 
-  @media (min-width: @width-desktop) {
+  @media @width-desktop {
     width: 700px;
   }
 }
@@ -232,7 +235,7 @@
   line-height: 16px;
   font-weight: normal;
 
-  @media (min-width: @width-tablet) {
+  @media @width-tablet {
     font-size: 17px;
     line-height: 30px;
   }
@@ -245,7 +248,7 @@
   line-height: 16px;
   margin-bottom: 56px;
 
-  @media (min-width: @width-tablet) {
+  @media @width-tablet {
     width: 230px;
   }
 }

@@ -1,5 +1,5 @@
-
 .goods-popup {
+  .container();
   min-height: 340px;
   width: 100%;
   border: 1px solid @grey-93;
@@ -8,7 +8,8 @@
 
 .goods-popup__form-wrapper {
   width: 260px;
-  margin-left: 30px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .goods-popup__title {
@@ -45,7 +46,7 @@
 }
 
 /*Для ширины планшета и компьютера*/
-@media (min-width: @width-tablet) {
+@media @width-tablet {
   .goods-popup {
     width: 566px;
     height: 340px;
@@ -53,7 +54,6 @@
 
   .goods-popup__form-wrapper {
     width: 350px;
-    margin-left: 108px;
   }
 
   .goods-popup__title {

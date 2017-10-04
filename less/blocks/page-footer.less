@@ -5,6 +5,10 @@
   background-color: @grey-95;
 }
 
+.page-footer__container {
+    .container();
+}
+
 .page-footer__image {
   display: none;
 }
@@ -34,7 +38,7 @@
 }
 
 /*Для ширины планшета и компьютера*/
-@media (min-width: @width-tablet) {
+@media @width-tablet {
   .page-footer {
     min-height: 143px;
   }

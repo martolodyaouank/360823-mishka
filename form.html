@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: MISHKA</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -18,27 +19,38 @@
       </div>
       <ul class="main-navigation main-navigation-catalog">
         <li class="main-navigation__item main-navigation-catalog__item">
-          <a class="main-navigation__link main-navigation__link--catalog" href="catalog.html">Каталог товаров</a>
+          <div class="main-navigation__link-wrapper">
+            <a class="main-navigation__link main-navigation__link--catalog" href="catalog.html">Каталог товаров</a>
+          </div>
         </li>
         <li class=" main-navigation__item main-navigation-catalog__item">
-          <a class="main-navigation__link main-navigation__link--order" href="form.html">Вязание на заказ</a>
+          <div class="main-navigation__link-wrapper">
+            <a class="main-navigation__link main-navigation__link--order" href="form.html">Вязание на заказ</a>
+          </div>
         </li>
       </ul>
       <ul class=" main-navigation main-navigation-extra">
         <li class="main-navigation__item main-navigation-extra__item">
-          <a class="main-navigation__link main-navigation__link--new">Новые поступления
-          </a>
+          <div class="main-navigation__link-wrapper">
+            <a class="main-navigation__link main-navigation__link--new">Новые поступления</a>
+          </div>
         </li>
         <li class="main-navigation__item main-navigation-extra__item">
-          <a class="main-navigation__link main-navigation__link--sale">Распродажа</a>
+          <div class="main-navigation__link-wrapper">
+            <a class="main-navigation__link main-navigation__link--sale">Распродажа</a>
+          </div>
         </li>
       </ul>
       <ul class="main-navigation main-navigation-order">
         <li class="main-navigation__item main-navigation-order__item--search">
-          <a class="main-navigation__link main-navigation__link--search">Поиск по сайту</a>
+          <div class="main-navigation__link-wrapper">
+            <a class="main-navigation__link main-navigation__link--search">Поиск по сайту</a>
+          </div>
         </li>
         <li class="main-navigation__item main-navigation-order__item--backet">
-          <a class="main-navigation__link main-navigation__link--basket">Корзина: пока пуста</a>
+          <div class="main-navigation__link-wrapper">
+            <a class="main-navigation__link main-navigation__link--basket">Корзина: пока пуста</a>
+          </div>
         </li>
       </ul>
       <div class="page-header__navigation-link-wrapper">
@@ -53,13 +65,13 @@
       </div>
     </section>
     <section class="offer-info">
-      <div class="offer-info__container container">
+      <div class="offer-info__container">
         <p class="offer-info__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       </div>
     </section>
     <form class="offer-form">
       <div class="offer-form__item offer-form__item--type">
-        <div class="offer-form__container container">
+        <div class="offer-form__container">
           <p class="offer-form__title">Тип</p>
           <div class="offer-form__wrapper">
             <div class="offer-form__radio">
@@ -78,7 +90,7 @@
         </div>
       </div>
       <div class="offer-form__item offer-form__item--color">
-        <div class="offer-form__container container">
+        <div class="offer-form__container">
           <p class="offer-form__title">Цвет</p>
           <div class="offer-form__wrapper offer-form__wrapper--color">
             <div class="offer-form__checkbox">
@@ -121,7 +133,7 @@
         </div>
       </div>
       <div class="offer-form__item offer-form__item--info-names">
-        <div class="offer-form__container container">
+        <div class="offer-form__container">
           <p class="offer-form__title">ФИО</p>
           <div class="offer-form__wrapper offer-form__wrapper--names">
             <div class="offer-form__info">
@@ -147,7 +159,7 @@
       </div>
       <div class="offer-form__item-wrapper">
         <div class="offer-form__item offer-form__item--phone">
-          <div class="offer-form__container container">
+          <div class="offer-form__container">
             <p class="offer-form__title">Тел</p>
             <div class="offer-form__wrapper">
               <div class="offer-form__text offer-form__text--phone">
@@ -157,7 +169,7 @@
           </div>
         </div>
         <div class="offer-form__item offer-form__item--mail">
-          <div class="offer-form__container container">
+          <div class="offer-form__container">
             <p class="offer-form__title offer-form__title--mail">E-mail</p>
             <div class="offer-form__wrapper">
               <div class="offer-form__text offer-form__text--mail">
@@ -168,7 +180,7 @@
         </div>
       </div>
       <div class="offer-form__item offer-form__item--extra">
-        <div class="offer-form__container container">
+        <div class="offer-form__container">
           <p class="offer-form__title">Доп</p>
           <div class="offer-form__wrapper">
             <div class="offer-form__text offer-form__text--extra">
@@ -177,14 +189,14 @@
           </div>
         </div>
       </div>
-      <div class="offer-form__container offer-form__item--explonatory container">
+      <div class="offer-form__container offer-form__item--explonatory">
         <p class="offer-form__explanatory-text">*Поля обязательны для заполнения</p>
         <button class="offer-form__button-submit btn" type="submit">Отправить заказ</button>
       </div>
     </form>
   </main>
   <footer class="page-footer">
-    <div class="page-footer__container container">
+    <div class="page-footer__container">
       <div class="page-footer__image">
         <a class="page-footer__logo" href="#"></a>
       </div>

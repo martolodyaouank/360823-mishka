@@ -1,5 +1,6 @@
-
 .production {
+  .container();
+
   border: 1px solid @grey-93;
   padding-bottom: 33px;
   margin-bottom: 58px;
@@ -12,13 +13,13 @@
     box-shadow: 0 0 5px 0 @grey-90;
   }
 
-  @media (min-width: @width-tablet) {
+  @media @width-tablet {
     position: relative;
     width: 668px;
     height: 746px;
   }
 
-  @media (min-width: @width-desktop) {
+  @media @width-desktop {
     position: relative;
     width: 1050px;
     height: 460px;
@@ -26,7 +27,7 @@
 }
 
 .production__wrapper {
-  @media (min-width: @width-tablet) {
+  @media @width-tablet {
     position: relative;
     display: block;
     width: 668px;
@@ -34,7 +35,7 @@
     padding-top: 456px;
   }
 
-  @media (min-width: @width-desktop) {
+  @media @width-desktop {
     position: relative;
     display: block;
     width: 368px;
@@ -54,14 +55,14 @@
   line-height: 24px;
   font-weight: bold;
 
-  @media (min-width: @width-tablet) {
+  @media @width-tablet {
     width: 250px;
     font-size: 20px;
     padding-top: 38px;
     margin-left: 105px;
   }
 
-  @media (min-width: @width-desktop) {
+  @media @width-desktop {
     width: 158px;
     font-size: 20px;
     padding-top: 38px;
@@ -70,12 +71,12 @@
 }
 
 .production__container {
-  @media (min-width: @width-tablet) {
+  @media @width-tablet {
     padding-top: 0;
     padding-left: 40px;
   }
 
-  @media (min-width: @width-desktop) {
+  @media @width-desktop {
     padding-top: 0;
     padding-left: 80px;
   }
@@ -87,14 +88,14 @@
   padding-left: 28px;
   width: 187px;
 
-  @media (min-width: @width-tablet) {
+  @media @width-tablet {
     font-size: 15px;
     line-height: 30px;
     width: 585px;
     padding: 0;
   }
 
-  @media (min-width: @width-desktop) {
+  @media @width-desktop {
     font-size: 15px;
     line-height: 30px;
     width: 238px;
@@ -103,14 +104,14 @@
 }
 
 .production__video-image {
-  @media (min-width: @width-tablet) {
+  @media @width-tablet {
     position: absolute;
     top: 0;
     width: 100%;
     height: 460px;
   }
 
-  @media (min-width: @width-desktop) {
+  @media @width-desktop {
     position: absolute;
     z-index: -1;
     bottom: 0;
@@ -127,13 +128,13 @@
   padding-top: 15px;
   padding-bottom: 15px;
 
-  @media (min-width: @width-tablet) {
+  @media @width-tablet {
     width: 585px;
     margin-top: 20px;
     margin-left: 0;
   }
 
-  @media (min-width: @width-desktop) {
+  @media @width-desktop {
     width: 231px;
     margin-top: 40px;
     margin-left: 0;

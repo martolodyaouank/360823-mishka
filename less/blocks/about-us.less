@@ -1,5 +1,6 @@
 
 .about-us__container {
+  .container();
   position: relative;
 }
 
@@ -25,7 +26,7 @@
 }
 
 /*Для ширины планшета*/
-@media (min-width: @width-tablet) {
+@media @width-tablet {
   .about-us__title {
     font-size: 43px;
     line-height: 50px;
@@ -48,7 +49,7 @@
   }
 }
 /*Для ширины компьютера*/
-@media (min-width: @width-desktop) {
+@media @width-desktop {
   .about-us__container {
     padding-left: 175px;
   }

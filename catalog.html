@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: MISHKA</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -18,27 +19,38 @@
       </div>
       <ul class="main-navigation main-navigation-catalog">
         <li class="main-navigation__item main-navigation-catalog__item">
-          <a class="main-navigation__link main-navigation__link--catalog" href="catalog.html">Каталог товаров</a>
+          <div class="main-navigation__link-wrapper">
+            <a class="main-navigation__link main-navigation__link--catalog" href="catalog.html">Каталог товаров</a>
+          </div>
         </li>
         <li class=" main-navigation__item main-navigation-catalog__item">
-          <a class="main-navigation__link main-navigation__link--order" href="form.html">Вязание на заказ</a>
+          <div class="main-navigation__link-wrapper">
+            <a class="main-navigation__link main-navigation__link--order" href="form.html">Вязание на заказ</a>
+          </div>
         </li>
       </ul>
       <ul class=" main-navigation main-navigation-extra">
         <li class="main-navigation__item main-navigation-extra__item">
-          <a class="main-navigation__link main-navigation__link--new">Новые поступления
-          </a>
+          <div class="main-navigation__link-wrapper">
+            <a class="main-navigation__link main-navigation__link--new">Новые поступления</a>
+          </div>
         </li>
         <li class="main-navigation__item main-navigation-extra__item">
-          <a class="main-navigation__link main-navigation__link--sale">Распродажа</a>
+          <div class="main-navigation__link-wrapper">
+            <a class="main-navigation__link main-navigation__link--sale">Распродажа</a>
+          </div>
         </li>
       </ul>
       <ul class="main-navigation main-navigation-order">
         <li class="main-navigation__item main-navigation-order__item--search">
-          <a class="main-navigation__link main-navigation__link--search">Поиск по сайту</a>
+          <div class="main-navigation__link-wrapper">
+            <a class="main-navigation__link main-navigation__link--search">Поиск по сайту</a>
+          </div>
         </li>
         <li class="main-navigation__item main-navigation-order__item--backet">
-          <a class="main-navigation__link main-navigation__link--basket">Корзина: пока пуста</a>
+          <div class="main-navigation__link-wrapper">
+            <a class="main-navigation__link main-navigation__link--basket">Корзина: пока пуста</a>
+          </div>
         </li>
       </ul>
       <div class="page-header__navigation-link-wrapper">
@@ -53,7 +65,7 @@
       </div>
     </section>
     <section class="products">
-      <div class="products__container container">
+      <div class="products__container">
         <div class="products__item">
           <a class="products__image-link" href="#">
             <img class="products__image" src="img/photo-hare-mobile@1x.jpg" width="260" height="197" alt="Зайчик-попрыгайчик">
@@ -101,7 +113,7 @@
         </div>
       </div>
     </section>
-    <section class="production container">
+    <section class="production">
       <div class="production__wrapper">
         <div class="production__headline">
           <h2 class="production__headline-title">Процесс производства</h2>
@@ -117,7 +129,7 @@
     </section>
   </main>
   <footer class="page-footer">
-    <div class="page-footer__container container">
+    <div class="page-footer__container">
       <div class="page-footer__image">
         <a class="page-footer__logo" href="#"></a>
       </div>
@@ -133,7 +145,7 @@
       </div>
     </div>
   </footer>
-  <section class="goods-popup container">
+  <section class="goods-popup">
     <div class="goods-popup-wrapper">
       <h3 class="goods-popup__title">Добавить в корзину</h3>
       <form class="goods-popup__form">

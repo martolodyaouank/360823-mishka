@@ -15,21 +15,10 @@
 
 body {
   font-family: "Open Sans", "Arial", sans-serif;
+  min-width: 320px;
   margin: 0;
   padding: 0;
   color: @text-color;
-  width: @width-mobile;
-  margin-left: auto;
-  margin-right: auto;
-  overflow-x: hidden;
-
-  @media (min-width: @width-tablet) {
-    width: @width-tablet;
-  }
-
-  @media (min-width: @width-desktop) {
-    width: @width-desktop;
-  }
 }
 
 a {
@@ -51,18 +40,9 @@ li {
   list-style: none;
 }
 
-.container {
-  width: 260px;
-  margin-left: auto;
-  margin-right: auto;
-
-  @media (min-width: @width-tablet) {
-    width: 668px;
-  }
-
-  @media (min-width: @width-desktop) {
-    width: 1050px;
-  }
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 * {
