@@ -12,7 +12,7 @@
 
 .goods__text {
   .container();
-  height: 283px;
+  min-height: 236px;
 }
 
 .goods__title {
@@ -20,13 +20,13 @@
   line-height: 30px;
   font-weight: bold;
   color: @text-color--dark;
-  padding-top: 80px;
-  padding-bottom: 126px;
+  padding-top: 50px;
   text-align: center;
 }
 
 .goods__nav {
   padding: 0;
+  margin-bottom: 0;
 }
 
 .goods__item {
@@ -42,8 +42,7 @@
   font-size: 19px;
   font-weight: bold;
   line-height: 24px;
-  padding-top: 32px;
-  padding-bottom: 28px;
+  padding-top: 25px;
 
   &:hover {
     color: @text-color--light;
@@ -52,10 +51,6 @@
   &:active {
     color: fade(@text-color--light, 30%);
   }
-}
-
-.goods__link-container {
-  .container();
 }
 
 .goods__item--interior {
@@ -82,16 +77,21 @@
   }
 }
 
+@media @width-mobile {
+  .goods__link-container {
+    .container();
+  }
+}
 /*Для ширины планшета*/
 @media @width-tablet {
   .goods__text {
-    height: 630px;
+    min-height: 553px;
   }
 
   .goods__title {
     font-size: 43px;
     line-height: 53px;
-    padding-top: 160px;
+    padding-top: 110px;
   }
 
   .goods__nav {
@@ -104,15 +104,22 @@
 
   .goods__item {
     width: 50%;
+    min-height: 119px;
   }
 
   .goods__link {
     padding-left: 34px;
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 
 /*Для ширины компьютера*/
 @media @width-desktop {
+  .goods__text {
+    min-height: 537px;
+  }
+
   .goods__title {
     font-size: 53px;
     line-height: 57px;

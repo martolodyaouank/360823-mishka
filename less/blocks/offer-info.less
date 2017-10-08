@@ -5,12 +5,26 @@
 .offer-info__text {
   font-size: 13px;
   line-height: 24px;
+  margin-top: 22px;
 }
+
 
 /*Для ширины планшета*/
 @media @width-tablet {
-  .offer-info__text /*+ для компьютера*/ {
+  .offer-info__text {
+    margin-top: 68px;
     font-size: 17px;
     line-height: 30px;
+  }
+}
+
+/*Для ширины компьютера*/
+@media @width-desktop {
+  .offer-info__container {
+    width: 700px;
+  }
+
+  .offer-info__text {
+    margin-top: 115px;
   }
 }

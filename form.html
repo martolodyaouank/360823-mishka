@@ -12,7 +12,7 @@
   <header class="page-header">
     <section class="page-header__navigation">
       <div class="page-header__logo-wrapper">
-        <a class="page-header__logo">
+        <a class="page-header__logo" href="index.html">
           <img class="page-header__logo-image" src="img/logo-mobile.svg" width="88" height="35" alt="MISHKA">
           <button class="page-header__button" type="button"></button>
         </a>
@@ -72,18 +72,18 @@
     <form class="offer-form">
       <div class="offer-form__item offer-form__item--type">
         <div class="offer-form__container">
-          <p class="offer-form__title">Тип</p>
+          <p class="offer-form__title offer-form__title--type">Тип</p>
           <div class="offer-form__wrapper">
             <div class="offer-form__radio">
               <label class="offer-form__button offer-form__button--radio">
                 <input type="radio" name="radio" id="accessory" checked>
-                Аксессуар для  интерьера
+                <span class="offer-form__button--radio-text">Аксессуар для  интерьера</span>
               </label>
             </div>
             <div class="offer-form__radio">
               <label class="offer-form__button offer-form__button--radio">
                 <input type="radio" name="radio" id="toy">
-                Детская игрушка
+                <span class="offer-form__button--radio-text">Детская игрушка</span>
               </label>
             </div>
           </div>
@@ -91,42 +91,42 @@
       </div>
       <div class="offer-form__item offer-form__item--color">
         <div class="offer-form__container">
-          <p class="offer-form__title">Цвет</p>
+          <p class="offer-form__title offer-form__title--color">Цвет</p>
           <div class="offer-form__wrapper offer-form__wrapper--color">
             <div class="offer-form__checkbox">
               <label class="offer-form__button offer-form__button--checkbox">
                 <input type="checkbox" name="checkbox" id="white" checked>
-                Белый
+                <span class="offer-form__button--checkbox-text">Белый</span>
               </label>
             </div>
             <div class="offer-form__checkbox">
               <label class="offer-form__button offer-form__button--checkbox">
                 <input type="checkbox" name="checkbox" id="grey" checked>
-                Серый
+                  <span class="offer-form__button--checkbox-text">Серый</span>
               </label>
             </div>
             <div class="offer-form__checkbox">
               <label class="offer-form__button offer-form__button--checkbox">
                 <input type="checkbox" name="checkbox" id="tiffany">
-                "Тиффани"
+                  <span class="offer-form__button--checkbox-text">«Тиффани»</span>
               </label>
             </div>
             <div class="offer-form__checkbox">
               <label class="offer-form__button offer-form__button--checkbox">
                 <input type="checkbox" name="checkbox" id="black">
-                Черный
+                <span class="offer-form__button--checkbox-text">Черный</span>
               </label>
             </div>
             <div class="offer-form__checkbox">
               <label class="offer-form__button offer-form__button--checkbox">
                 <input type="checkbox" name="checkbox" id="pink">
-                Розовый
+                  <span class="offer-form__button--checkbox-text">Розовый</span>
               </label>
             </div>
             <div class="offer-form__checkbox">
               <label class="offer-form__button offer-form__button--checkbox">
                 <input type="checkbox" name="checkbox" id="orange">
-                Оранжевый
+                  <span class="offer-form__button--checkbox-text">Оранжевый</span>
               </label>
             </div>
           </div>
@@ -134,7 +134,7 @@
       </div>
       <div class="offer-form__item offer-form__item--info-names">
         <div class="offer-form__container">
-          <p class="offer-form__title">ФИО</p>
+          <p class="offer-form__title offer-form__title--info-names">ФИО</p>
           <div class="offer-form__wrapper offer-form__wrapper--names">
             <div class="offer-form__info">
               <label class="offer-form__text offer-form__text--names offer-form__text--names-name">
@@ -160,8 +160,8 @@
       <div class="offer-form__item-wrapper">
         <div class="offer-form__item offer-form__item--phone">
           <div class="offer-form__container">
-            <p class="offer-form__title">Тел</p>
-            <div class="offer-form__wrapper">
+            <p class="offer-form__title offer-form__title--phone">Тел</p>
+            <div class="offer-form__wrapper offer-form__wrapper--phone">
               <div class="offer-form__text offer-form__text--phone">
                 <input type="text" name="text" id="phone-number" placeholder="+7 ХХХ ХХ ХХ*" required>
               </div>
@@ -171,7 +171,7 @@
         <div class="offer-form__item offer-form__item--mail">
           <div class="offer-form__container">
             <p class="offer-form__title offer-form__title--mail">E-mail</p>
-            <div class="offer-form__wrapper">
+            <div class="offer-form__wrapper offer-form__wrapper--mail">
               <div class="offer-form__text offer-form__text--mail">
                 <input type="email" name="email" id="email" placeholder="Ваш Email*" required>
               </div>
@@ -181,7 +181,7 @@
       </div>
       <div class="offer-form__item offer-form__item--extra">
         <div class="offer-form__container">
-          <p class="offer-form__title">Доп</p>
+          <p class="offer-form__title offer-form__title--extra">Доп</p>
           <div class="offer-form__wrapper">
             <div class="offer-form__text offer-form__text--extra">
               <textarea name="textarea" id="extra" placeholder="Опишите все ваши пожелания к заказу"></textarea>
