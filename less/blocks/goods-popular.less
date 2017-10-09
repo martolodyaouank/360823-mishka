@@ -1,4 +1,3 @@
-
 .goods-popular {
   position: relative;
 }
@@ -9,7 +8,8 @@
 }
 
 .goods-popular__title {
-  padding-top: 35px;
+  padding-top: 8px;
+  margin-bottom: 3px;
   color: @text-color--dark;
   font-size: 25px;
   font-weight: bold;
@@ -17,7 +17,6 @@
 }
 
 .goods-popular__span {
-  padding-bottom: 30px;
   color: @aqua;
   font-size: 17px;
   font-weight: bold;
@@ -26,6 +25,7 @@
 }
 
 .goods-popular__description {
+  margin-top: 20px;
   font-size: 15px;
   line-height: 24px;
 }
@@ -34,7 +34,7 @@
   font-size: 15px;
   line-height: 20px;
   width: 100%;
-  margin-top: 25px;
+  margin-top: 20px;
   margin-bottom: 28px;
   border-collapse: collapse;
 }
@@ -48,6 +48,10 @@
   padding-bottom: 10px;
 }
 
+.goods-popular__details td:last-child {
+  padding-left: 15px;
+}
+
 .goods-popular__price {
   font-size: 17px;
   line-height: 24px;
@@ -56,6 +60,7 @@
 }
 
 .goods-popular__button {
+  margin-top: 10px;
   width: 260px;
   height: 51px;
   font-size: 17px;
@@ -69,6 +74,7 @@
   }
 
   .goods-popular__title {
+    margin-top: 36px;
     margin-bottom: 49px;
     font-size: 43px;
     line-height: 53px;
@@ -76,7 +82,7 @@
 
   .goods-popular__span {
     position: absolute;
-    top: 50px;
+    top: 20px;
     right: 22px;
     width: 80px;
     text-align: center;
@@ -87,13 +93,21 @@
     line-height: 30px;
   }
 
+  .goods-popular__details {
+    margin-top: 33px;
+  }
+
+  .goods-popular__details td:last-child {
+    padding-left: 0;
+  }
+
   .goods-popular__image {
     width: 334px;
     height: 405px;
     position: absolute;
     z-index: -1;
-    top: 135px;
-    left: 350px;
+    top: 115px;
+    left: 330px;
     background-color: @grey-93;
   }
 
@@ -119,18 +133,23 @@
   }
 
   .goods-popular__title {
+    margin-top: 115px;
     margin-bottom: 49px;
     font-size: 53px;
     line-height: 57px;
   }
 
   .goods-popular__span {
-    top: 50px;
-    left: 38px;
+    top: 23px;
+    left: 40px;
   }
 
   .goods-popular__description {
     margin-bottom: 40px;
+  }
+
+  .goods-popular__details {
+    margin-top: 45px;
   }
 
   .goods-popular__image {
@@ -138,8 +157,8 @@
     height: 632px;
     position: absolute;
     z-index: -1;
-    top: -5px;
-    left: 530px;
+    top: -43px;
+    left: 527px;
     background-color: @grey-93;
   }
 

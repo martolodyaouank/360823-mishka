@@ -1,9 +1,24 @@
 .goods-popup {
   .container();
+  display: none;
+  background-color: @white;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -170px;
+  margin-left: -160px;
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-left: 30px;
   min-height: 340px;
-  width: 100%;
+  width: 320px;
   border: 1px solid @grey-93;
   box-shadow: 0 5px 10px 0 @grey-90;
+  z-index: 50;
+
+  input[type="radio"] {
+   display: none;
+ }
 }
 
 .goods-popup__form-wrapper {
@@ -13,6 +28,8 @@
 }
 
 .goods-popup__title {
+  margin-top: 0;
+  margin-bottom: 12px;
   color: @text-color--dark;
   font-size: 25px;
   line-height: 30px;
@@ -27,10 +44,35 @@
   text-align: center;
 }
 
-.goods-popup__item {
+.goods-popup__items-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.goods-popup__item-text {
+  display: block;
+  cursor: pointer;
+  width: 78px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 2px solid @grey-93;
   font-size: 17px;
   line-height: 16px;
   font-weight: bold;
+  text-align: center;
+
+  &:hover {
+  border-color: @grey-78;
+  }
+
+  &:active {
+    border-color: @aqua;
+  }
+}
+
+input[type="radio"]:checked + .goods-popup__item-text {
+  border-color: @aqua;
 }
 
 .goods-popup__button {
@@ -43,6 +85,8 @@
   height: 51px;
   font-size: 17px;
   line-height: 16px;
+  padding-top: 17px;
+  padding-bottom: 17px;
 }
 
 /*Для ширины планшета и компьютера*/
@@ -50,6 +94,14 @@
   .goods-popup {
     width: 566px;
     height: 340px;
+    margin-left: -284px;
+    padding-top: 34px;
+    padding-right: 108px;
+    padding-left: 108px;
+  }
+
+  .goods-popup-wrapper {
+    width: 370px;
   }
 
   .goods-popup__form-wrapper {
@@ -57,6 +109,7 @@
   }
 
   .goods-popup__title {
+    margin-bottom: 15px;
     font-size: 30px;
     line-height: 57px;
   }
@@ -64,6 +117,10 @@
   .goods-popup__form-title {
     font-size: 17px;
     line-height: 30px;
+  }
+
+  .goods-popup__item-text {
+     width: 108px;
   }
 
   .goods-popup__button {

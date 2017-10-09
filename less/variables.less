@@ -1,3 +1,4 @@
+
 /*цвета*/
 @white: #ffffff;
 @black: #000000;
@@ -15,13 +16,11 @@
 @grey-93: #ececec; // бордеры
 @grey-95: #f1f1f1; //фон хедера и футера
 @grey-98: #fafafa; //фон для блоков
-
 /*цвета текста*/
 @text-color: @grey-27;
 @text-color--light: @white;
 @text-color--dark: @black;
-
-/**/
-@width-mobile: 320px;
-@width-tablet: 768px;
-@width-desktop: 1250px;
+/*размеры*/
+@width-mobile: ~"(max-width: 767px)";
+@width-tablet: ~"(min-width: 768px)";
+@width-desktop: ~"(min-width: 1150px)";
