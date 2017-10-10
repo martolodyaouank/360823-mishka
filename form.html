@@ -13,7 +13,11 @@
     <section class="page-header__navigation">
       <div class="page-header__logo-wrapper">
         <a class="page-header__logo" href="index.html">
-          <img class="page-header__logo-image" src="img/logo-mobile.svg" width="88" height="35" alt="MISHKA">
+          <picture>
+            <source media="(min-width:1150px)" srcset="img/logo-desktop.svg" width="150" height="74">
+            <source media="(min-width:768px)" srcset="img/logo-tablet.svg" width="115" height="50">
+            <img class="page-header__logo-image" src="img/logo-mobile.svg" width="88" height="35" alt="Mishka">
+          </picture>
           <button class="page-header__button" type="button"></button>
         </a>
       </div>
@@ -163,7 +167,7 @@
             <p class="offer-form__title offer-form__title--phone">Тел</p>
             <div class="offer-form__wrapper offer-form__wrapper--phone">
               <div class="offer-form__text offer-form__text--phone">
-                <input type="text" name="text" id="phone-number" placeholder="+7 ХХХ ХХ ХХ*" required>
+                <input type="tel" name="text" id="phone-number" placeholder="+7 ХХХ ХХ ХХ*" required>
               </div>
             </div>
           </div>

@@ -114,9 +114,16 @@
     width: 351px;
     height: 455px;
     background-color: @grey-93;
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 351px 455px;
     z-index: -1;
     top: -70px;
     left: -50px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/review@2px.jpg");
+    }
   }
 }
 
