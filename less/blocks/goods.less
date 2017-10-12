@@ -4,11 +4,13 @@
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: top center;
+  background-size: cover;
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-  background-image: url("../img/hero-mobile@2x.jpg");
+    background-image: url("../img/hero-mobile@2x.jpg");
+  }
 }
-}
+
 
 .goods__container {
   position: relative;
@@ -44,7 +46,6 @@
 
 .goods__link {
   display: inline-block;
-  width: 130px;
   color: @text-color--light;
   font-size: 19px;
   font-weight: bold;
@@ -92,6 +93,7 @@
     .container();
     min-height: 103px;
   }
+
   .goods__link {
     min-height: 103px;
   }
@@ -99,13 +101,19 @@
 /*Для ширины планшета*/
 @media @width-tablet {
   .goods {
+    position: relative;
+    z-index: -100;
     background-image: url("../img/hero-desktop@1x.jpg");
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-    background-image: url("../img/hero-desktop@2x.jpg");
+      background-image: url("../img/hero-desktop@2x.jpg");
+    }
   }
 
+  .goods__container {
+    position: relative;
   }
+
   .goods__text {
     min-height: 553px;
   }
@@ -122,6 +130,20 @@
     margin-right: auto;
     display: flex;
     justify-content: space-between;
+    position: relative;
+  }
+
+  .goods__nav::after {
+    content: "";
+    position: absolute;
+    margin: auto;
+    bottom: 0;
+    width: 668px;
+    z-index: 333;
+    height: 24px;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: repeat-x;
+    background-size: 750px 50px;
   }
 
   .goods__item {
@@ -149,6 +171,11 @@
 
   .goods__nav {
     width: 1050px;
+  }
+
+  .goods__nav::after {
+    width: 1050px;
+    background-size: 1200px 50px;
   }
 
   .goods__link {
