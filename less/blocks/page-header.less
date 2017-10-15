@@ -31,14 +31,31 @@
 
 .page-header__logo-wrapper {
   padding-left: 50px;
-
-  @media @width-mobile {
-    .container();
-  }
 }
 
 .page-header__navigation-link {
   display: none;
+}
+
+@media @width-mobile {
+  .page-header__logo-wrapper {
+    .container();
+  }
+
+  .page-header__logo picture {
+    margin-right: 50px;
+    margin-left: 30px;
+  }
+
+  .page-header__button {
+    background-color: white;
+    border-style: none;
+    background-image: url("../img/icon-menu-open.svg");
+    background-position: center center;
+    width: 22px;
+    height: 14px;
+    margin-left: 20px;
+  }
 }
 
 @media @width-tablet {
@@ -73,10 +90,12 @@
   }
 
   .page-header__navigation-link {
+    position: relative;
     display: inline-block;
     font-size: 15px;
     line-height: 24px;
     padding-top: 15px;
+    z-index: 20;
   }
 }
 

@@ -39,6 +39,7 @@
   display: inline-block;
   margin-bottom: 0;
   padding-right: 30px;
+  padding-top: 15px;
 }
 
 .products__image {
@@ -54,6 +55,7 @@
 }
 
 .products__offer {
+  position: relative;
   border-top: 1px solid @grey-93;
   width: 206px;
   display: flex;
@@ -66,6 +68,28 @@
   line-height: 24px;
   font-weight: bold;
   padding-top: 8px;
+}
+
+.prodicts-button {
+  position: relative;
+  display: inline-block;
+}
+
+
+.products__icon {
+  position: absolute;
+  opacity: 0.3;
+  left: 180px;
+  top: -40px;
+
+  &:hover {
+    fill: @aqua;
+    opacity: 1;
+  }
+
+  &:active {
+    fill: @aqua;
+  }
 }
 
 .products-info__container {
@@ -117,6 +141,10 @@
   .products__price {
     font-size: 17px;
     margin-top: 20px;
+  }
+
+  .products__icon {
+    left: 250px;
   }
 
   .products-info__container {
@@ -172,6 +200,10 @@
 
   .products__offer {
     width: 260px;
+  }
+
+  .products__icon {
+    left: 240px;
   }
 
   .products-info__container {

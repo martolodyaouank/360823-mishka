@@ -1,6 +1,7 @@
 .main-navigation {
   padding: 0;
   margin: 0;
+  z-index: 2;
 }
 
 .main-navigation__item {
@@ -9,14 +10,36 @@
 }
 
 .main-navigation__link-wrapper {
+  position: relative;
+
   @media @width-mobile {
     .container();
   }
 }
 
+.main-navigation__icon {
+  position: absolute;
+  width: 21px;
+  height: 18px;
+  opacity: 0.3;
+  left: 20px;
+  top: 35px;
+}
+
+.main-navigation__item:hover .main-navigation__icon {
+  fill: @aqua;
+  opacity: 1;
+}
+
+.main-navigation__item:active .main-navigation__icon {
+  fill: @aqua;
+  opacity: 0.2;
+}
+
+
 .main-navigation__link {
   display: inline-block;
-  padding-left: 76px;
+  padding-left: 65px;
   padding-top: 30px;
   font-size: 17px;
   line-height: 24px;

@@ -11,12 +11,46 @@
 
 .page-footer__image {
   display: none;
+  position: relative;
 }
 
 .page-footer__social {
+  padding-left: 56px;
+  padding-right: 80px;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
   font-size: 0;
   border-bottom: 1px solid @grey-90;
   min-height: 80px;
+}
+
+.page-footer__button {
+  position: relative;
+}
+
+.page-footer__icon {
+  position: absolute;
+  top: -35px;
+
+  &:hover {
+    fill: @aqua;
+  }
+
+  &:active {
+    fill: @aqua;
+    opacity: 0.2;
+  }
+
+  &--html {
+    fill: @aqua;
+    top: -60px;
+    left: 180px;
+  }
+
+  &--logo {
+    display: none;
+  }
 }
 
 .page-footer__copyright {
@@ -24,6 +58,7 @@
 }
 
 .page-footer__copyright-link {
+  position: relative;
   display: inline-block;
   text-align: center;
   font-size: 19px;
@@ -36,14 +71,6 @@
 
 .page-footer__copyright-link span {
   font-size: 0;
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  vertical-align: middle;
-  margin-left: 20px;
-  background-image: url("../img/htmlacademy.svg");
-  background-repeat: no-repeat;
-  background-position: right center;
 }
 
 /*Для ширины планшета и компьютера*/
@@ -57,23 +84,42 @@
     justify-content: space-between;
   }
 
+  .page-footer__icon {
+    position: absolute;
+    top: -10px;
+
+    &--html {
+      fill: @aqua;
+      top: -60px;
+      left: 140px;
+    }
+
+    &--logo {
+      display: inline-block;
+    }
+
+    &--instagram {
+      left: -12px;
+    }
+  }
+
   .page-footer__image {
     display: inline-block;
     height: 143px;
     width: 167px;
-    outline: 1px solid red;
   }
 
   .page-footer__social {
     border-bottom: none;
     height: 143px;
-    width: 167px;
-    outline: 1px solid red;
+    width: 175px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   .page-footer__copyright {
     height: 143px;
-    outline: 1px solid red;
+    padding-right: 55px;
   }
 
   .page-footer__copyright-link {

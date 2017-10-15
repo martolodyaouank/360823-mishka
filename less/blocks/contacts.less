@@ -3,12 +3,16 @@
 }
 
 .contacts__title {
-  padding-top: 67px;
+  padding-top: 16px;
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
   color: @text-color--dark;
   margin-bottom: 10px;
+}
+
+.contacts__icon {
+  display: none;
 }
 
 .contacts__description {
@@ -84,13 +88,17 @@
 
 /*Для ширины планшета*/
 @media @width-tablet {
-  .contacts {
-    margin-top: 96px;
-  }
-
   .contacts__title {
+    position: relative;
     font-size: 43px;
     line-height: 50px;
+  }
+
+  .contacts__icon {
+    display: inline-block;
+    position: absolute;
+    left: 620px;
+    top: -30px;
   }
 
   .contacts__description {
@@ -147,8 +155,13 @@
 /*Для ширины компьютера*/
 @media @width-desktop {
   .contacts {
-    margin-top: 230px;
+    margin-top: 130px;
     position: relative;
+  }
+
+  .contacts__icon {
+    left: -110px;
+    top: -30px;
   }
 
   .contacts__container {

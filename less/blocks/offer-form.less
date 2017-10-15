@@ -55,6 +55,7 @@
   font-size: 17px;
   line-height: 18px;
   padding-bottom: 20px;
+  position: relative;
 
   &--extra {
     padding-bottom: 0;
@@ -78,6 +79,31 @@
   &::-webkit-input-placeholder {
     color: fade(@text-color, 30%);
   }
+
+  &:hover {
+    border-bottom: 2px solid @aqua;
+  }
+
+  &:active {
+    border-bottom: 2px solid @aqua;
+  }
+}
+
+.offer-form__icon {
+  position: absolute;
+  opacity: 0.3;
+  left: 220px;
+  top: -50px;
+}
+
+.offer-form__text:hover .offer-form__icon {
+  fill: @aqua;
+  opacity: 1;
+}
+
+.offer-form__text:active .offer-form__icon {
+  fill: @aqua;
+  opacity: 1;
 }
 
 .offer-form__text--extra textarea {
@@ -96,6 +122,14 @@
 
   &::-webkit-input-placeholder {
     color: fade(@text-color, 30%);
+  }
+
+  &:hover {
+    border: 2px solid @aqua;
+  }
+
+  &:active {
+    border: 2px solid @aqua;
   }
 }
 
@@ -138,19 +172,6 @@
 .offer-form__button--radio-text {
   position: relative;
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: -5px;
-    left: -60px;
-    width: 16px;
-    height: 16px;
-    background-color: @white;
-    border: 10px solid @white;
-    border-radius: 50%;
-    box-shadow: 0 0 0 2px @grey-27;
-  }
-
   &:hover::after {
     box-shadow: 0 0 0 2px @aqua;
   }
@@ -158,6 +179,19 @@
   &:active::after {
     box-shadow: 0 0 0 2px @grey-78;
   }
+}
+
+.offer-form__button--radio-text::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -60px;
+  width: 16px;
+  height: 16px;
+  background-color: @white;
+  border: 10px solid @white;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px @grey-27;
 }
 
 input[type="radio"]:checked + .offer-form__button--radio-text {
@@ -193,6 +227,16 @@ input[type="radio"]:checked + .offer-form__button--radio-text {
     border: 2px solid @grey-78;
   }
 }
+
+input[type="checkbox"]:checked + .offer-form__button--checkbox-text {
+  &::before {
+    background-image: url("../img/icon-tick.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 22px 25px;
+  }
+}
+
 
 /*Для ширины планшета*/
 @media @width-tablet {
@@ -331,6 +375,10 @@ input[type="radio"]:checked + .offer-form__button--radio-text {
     line-height: 18px;
   }
 
+  .offer-form__icon {
+    left: 450px;
+  }
+
 
   .offer-form__text--names-name input {
     width: 422px;
@@ -376,6 +424,12 @@ input[type="radio"]:checked + .offer-form__button--radio-text {
     width: 48px;
     height: 48px;
   }
+
+  input[type="checkbox"]:checked + .offer-form__button--checkbox-text {
+    &::before {
+      background-size: 35px 25px;
+    }
+  }
 }
 
 /*Для ширины компьютера*/
@@ -400,26 +454,26 @@ input[type="radio"]:checked + .offer-form__button--radio-text {
     padding-bottom: 20px;
     width: 735px;
     margin-left: 73px;
-  }
 
-  .offer-form__wrapper--color {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 750px;
-    padding-top: 50px;
-    margin-left: 65px;
-    padding-bottom: 30px;
-  }
+    &--color {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 750px;
+      padding-top: 50px;
+      margin-left: 65px;
+      padding-bottom: 30px;
+    }
 
-  .offer-form__wrapper--phone {
-    padding-bottom: 0;
-    margin-left: 80px;
-  }
+    &--phone {
+      padding-bottom: 0;
+      margin-left: 80px;
+    }
 
-  .offer-form__wrapper--mail {
-    padding-top: 0;
-    margin-left: 55px;
+    &--mail {
+      padding-top: 0;
+      margin-left: 55px;
+    }
   }
 
   .offer-form__item-wrapper input {
@@ -428,17 +482,21 @@ input[type="radio"]:checked + .offer-form__button--radio-text {
 
   .offer-form__button {
     width: 735px;
-  }
 
-  .offer-form__button--checkbox {
-    width: 200px;
-    min-height: 40px;
+    &--checkbox {
+      width: 200px;
+      min-height: 40px;
+    }
   }
 
   .offer-form__text input {
     width: 574px;
     padding-left: 15px;
     margin-left: 25px;
+  }
+
+  .offer-form__icon {
+    left: 660px;
   }
 
   .offer-form__text--names-name input {
