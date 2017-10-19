@@ -9,7 +9,7 @@
 
 
 .products-info__wrapper {
-  margin-top: 10px;
+  margin-top: 12px;
 }
 
 .products__item {
@@ -26,8 +26,11 @@
   }
 }
 
-.products__item:last-child {
+.products__item {
+  &:last-child {
   min-height: 400px;
+  margin-bottom: 31px;
+  }
 }
 
 .products__title {
@@ -38,6 +41,12 @@
   display: inline-block;
   margin-bottom: 0;
   padding-right: 30px;
+  padding-top: 15px;
+}
+
+.products__image {
+  display: block;
+  width: 100%;
 }
 
 .products__description {
@@ -48,6 +57,7 @@
 }
 
 .products__offer {
+  position: relative;
   border-top: 1px solid @grey-93;
   width: 206px;
   display: flex;
@@ -59,6 +69,29 @@
   font-size: 15px;
   line-height: 24px;
   font-weight: bold;
+  padding-top: 8px;
+}
+
+.prodicts-button {
+  position: relative;
+  display: inline-block;
+}
+
+
+.products__icon {
+  position: absolute;
+  opacity: 0.3;
+  left: 180px;
+  top: -40px;
+
+  &:hover {
+    fill: @aqua;
+    opacity: 1;
+  }
+
+  &:active {
+    fill: @aqua;
+  }
 }
 
 .products-info__container {
@@ -77,13 +110,15 @@
     width: 668px;
     min-height: 300px;
     margin-bottom: 50px;
-  }
 
-  .products__item:last-child {
+    &:last-child {
     min-height: 334px;
+    margin-bottom: 55px;
+    }
   }
 
-  .products__image {
+
+  .products__image-link {
     width: 334px;
     height: 100%;
     background-color: @grey-95;
@@ -91,10 +126,10 @@
 
   .products__title {
     font-size: 20px;
-  }
 
-  .products__title--toy-basket {
-    width: 241px;
+    &--toy-basket {
+      width: 241px;
+    }
   }
 
   .products__description {
@@ -109,6 +144,10 @@
   .products__price {
     font-size: 17px;
     margin-top: 20px;
+  }
+
+  .products__icon {
+    left: 250px;
   }
 
   .products-info__container {
@@ -134,6 +173,7 @@
 
   .products-info__wrapper {
     margin-top: 0;
+    padding-top: 12px;
     min-height: 124px;
   }
 
@@ -141,21 +181,34 @@
     display: inline-block;
     width: 317px;
     min-height: 662px;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
+
+    &:last-child {
+      display: inline-block;
+      width: 317px;
+      min-height: 662px;
+      margin-bottom: 60px;
+    }
   }
 
-  .products__item:last-child {
-    min-height: 662px;
-  }
 
-  .products__image {
+  .products__image-link {
     width: 316px;
     height: 462px;
   }
 
+  .products__description {
+    &--toy-basket {
+    margin-bottom: 0;
+    }
+  }
+
   .products__offer {
     width: 260px;
-    margin-bottom: 15px;
+  }
+
+  .products__icon {
+    left: 240px;
   }
 
   .products-info__container {

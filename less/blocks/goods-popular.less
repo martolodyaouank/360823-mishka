@@ -2,6 +2,25 @@
   position: relative;
 }
 
+.goods-popular__container-wrapper {
+  width: 260px;
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 43px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+    height: 7px;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-size: 350px;
+  }
+}
+
 .goods-popular__container {
   .container();
   position: relative;
@@ -37,20 +56,21 @@
   margin-top: 20px;
   margin-bottom: 28px;
   border-collapse: collapse;
+
+  tr {
+    border-bottom: 1px solid @grey-90;
+  }
+
+  td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    &:last-child {
+      padding-left: 15px;
+    }
+  }
 }
 
-.goods-popular__details tr {
-  border-bottom: 1px solid @grey-90;
-}
-
-.goods-popular__details td {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.goods-popular__details td:last-child {
-  padding-left: 15px;
-}
 
 .goods-popular__price {
   font-size: 17px;
@@ -67,9 +87,27 @@
   line-height: 20px;
 }
 
+.goods-popular__image {
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+}
+
 /*Для ширины планшета*/
 @media @width-tablet {
-  .goods-popular-wrapper {
+  .goods-popular__container-wrapper {
+    width: 768px;
+    padding-bottom: 70px;
+
+    &::after {
+      height: 17px;
+      background-size: contain;
+    }
+  }
+
+  .goods-popular__wrapper {
     padding-right: 378px;
   }
 
@@ -95,10 +133,12 @@
 
   .goods-popular__details {
     margin-top: 33px;
-  }
 
-  .goods-popular__details td:last-child {
-    padding-left: 0;
+    td {
+      &:last-child {
+        padding-left: 0;
+      }
+    }
   }
 
   .goods-popular__image {
@@ -124,11 +164,20 @@
 
 /*Для ширины компьютера*/
 @media @width-desktop {
+  .goods-popular__container-wrapper {
+    width: 1150px;
+    padding-bottom: 100px;
+
+    &::after {
+      height: 23px;
+    }
+  }
+
   .goods-popular__container {
     padding-left: 175px;
   }
 
-  .goods-popular-wrapper {
+  .goods-popular__wrapper {
     padding-right: 585px;
   }
 
