@@ -26,9 +26,11 @@
   }
 }
 
-.products__item:last-child {
+.products__item {
+  &:last-child {
   min-height: 400px;
   margin-bottom: 31px;
+  }
 }
 
 .products__title {
@@ -108,12 +110,13 @@
     width: 668px;
     min-height: 300px;
     margin-bottom: 50px;
-  }
 
-  .products__item:last-child {
+    &:last-child {
     min-height: 334px;
     margin-bottom: 55px;
+    }
   }
+
 
   .products__image-link {
     width: 334px;
@@ -123,10 +126,10 @@
 
   .products__title {
     font-size: 20px;
-  }
 
-  .products__title--toy-basket {
-    width: 241px;
+    &--toy-basket {
+      width: 241px;
+    }
   }
 
   .products__description {
@@ -194,8 +197,10 @@
     height: 462px;
   }
 
-  .products__description--toy-basket {
+  .products__description {
+    &--toy-basket {
     margin-bottom: 0;
+    }
   }
 
   .products__offer {

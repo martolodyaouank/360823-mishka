@@ -32,7 +32,7 @@
   line-height: 30px;
 }
 
-.reviews-wrapper {
+.reviews__wrapper {
   width: 260px;
 }
 
@@ -72,15 +72,17 @@
 
   &:hover {
     background-color: @text-color--light;
+
+    .reviews__icon {
+      opacity: 0.5;
+    }
   }
-}
 
-.reviews__slider-button:hover .reviews__icon {
-  opacity: 0.5;
-}
-
-.reviews__slider-button:active .reviews__icon {
-  opacity: 0.2;
+  &:active {
+    .reviews__icon {
+      opacity: 0.2;
+    }
+  }
 }
 
 .reviews__icon {
@@ -111,6 +113,24 @@
   .reviews__container {
     width: 768px;
     padding: 0 50px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 351px;
+      height: 455px;
+      background-color: @grey-93;
+      background-image: url("../img/review@1x.jpg");
+      background-repeat: no-repeat;
+      background-size: 351px 455px;
+      z-index: -1;
+      top: -70px;
+      left: 0;
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url("../img/review@2x.jpg");
+      }
+    }
   }
 
   .reviews__container-wrapper {
@@ -169,24 +189,6 @@
     left: 545px;
     top: 0;
   }
-
-  .reviews__container::before {
-    content: "";
-    position: absolute;
-    width: 351px;
-    height: 455px;
-    background-color: @grey-93;
-    background-image: url("../img/review@1x.jpg");
-    background-repeat: no-repeat;
-    background-size: 351px 455px;
-    z-index: -1;
-    top: -70px;
-    left: 0;
-
-    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url("../img/review@2px.jpg");
-    }
-  }
 }
 
 /*Для ширины компьютера*/
@@ -195,6 +197,17 @@
     .container();
     position: relative;
     padding-left: 175px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 351px;
+      height: 455px;
+      background-color: @grey-93;
+      z-index: -1;
+      top: -70px;
+      left: 0;
+    }
   }
 
   .reviews__container-wrapper {
@@ -242,16 +255,5 @@
     position: absolute;
     left: 880px;
     top: 0;
-  }
-
-  .reviews__container::before {
-    content: "";
-    position: absolute;
-    width: 351px;
-    height: 455px;
-    background-color: @grey-93;
-    z-index: -1;
-    top: -70px;
-    left: 0;
   }
 }

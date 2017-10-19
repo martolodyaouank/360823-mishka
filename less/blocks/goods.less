@@ -38,6 +38,42 @@
 .goods__item {
   color: @text-color--light;
   min-height: 103px;
+
+  &:hover {
+    .goods__icon {
+      opacity: 0.4;
+    }
+  }
+
+  &:active {
+    .goods__icon {
+      opacity: 0.1;
+    }
+  }
+
+  &--toys {
+    background-color: @aqua--dark;
+
+    &:hover {
+      background-color: @aqua--the-darkest;
+    }
+
+    &:active {
+      background-color: @aqua--the-darkest;
+    }
+  }
+
+  &--interior {
+    background-color: @aqua;
+
+    &:hover {
+      background-color: @aqua--light;
+    }
+
+    &:active {
+      background-color: @aqua--light;
+    }
+  }
 }
 
 .goods__icon {
@@ -81,38 +117,6 @@
 
   &:active {
     color: fade(@text-color--light, 30%);
-  }
-}
-
-.goods__item--interior {
-  background-color: @aqua;
-
-  &:hover {
-    background-color: @aqua--light;
-  }
-
-  &:active {
-    background-color: @aqua--light;
-  }
-}
-
-.goods__item:hover .goods__icon {
-  opacity: 0.4;
-}
-
-.goods__item:active .goods__icon {
-  opacity: 0.1;
-}
-
-.goods__item--toys {
-  background-color: @aqua--dark;
-
-  &:hover {
-    background-color: @aqua--the-darkest;
-  }
-
-  &:active {
-    background-color: @aqua--the-darkest;
   }
 }
 

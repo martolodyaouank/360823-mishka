@@ -56,20 +56,21 @@
   margin-top: 20px;
   margin-bottom: 28px;
   border-collapse: collapse;
-}
 
-.goods-popular__details tr {
-  border-bottom: 1px solid @grey-90;
-}
+  tr {
+    border-bottom: 1px solid @grey-90;
+  }
 
-.goods-popular__details td {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  td {
+    padding-top: 10px;
+    padding-bottom: 10px;
 
-  &:last-child {
-    padding-left: 15px;
+    &:last-child {
+      padding-left: 15px;
+    }
   }
 }
+
 
 .goods-popular__price {
   font-size: 17px;
@@ -132,10 +133,12 @@
 
   .goods-popular__details {
     margin-top: 33px;
-  }
 
-  .goods-popular__details td:last-child {
-    padding-left: 0;
+    td {
+      &:last-child {
+        padding-left: 0;
+      }
+    }
   }
 
   .goods-popular__image {
