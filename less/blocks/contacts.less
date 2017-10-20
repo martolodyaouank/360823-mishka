@@ -28,18 +28,31 @@
 }
 
 
-.email__title {
+.contacts__email-title {
   padding: 0;
   margin: 0;
   font-size: 15px;
   line-height: 30px;
 }
 
-.email__link {
+.contacts__email-link {
   font-size: 15px;
   line-height: 30px;
   text-decoration: underline;
   text-decoration-color: @aqua;
+
+  &:hover {
+    color: @aqua;
+    text-decoration: underline;
+    text-decoration-color: @aqua;
+  }
+
+  &:active {
+    color: @aqua;
+    text-decoration: underline;
+    text-decoration-color: @aqua;
+    opacity: 0.3;
+  }
 }
 
 .contacts__address {
@@ -48,16 +61,16 @@
   padding-top: 15px;
 }
 
-.adress__title {
+.contacts__address-title {
   font-size: 15px;
   line-height: 30px;
 }
 
-.adress__description-wrapper {
+.contacts__address-wrapper {
   width: 182px;
 }
 
-.adress__description {
+.contacts__address-description {
   font-size: 15px;
   line-height: 30px;
   width: 155px;
@@ -112,11 +125,11 @@
     width: 280px;
   }
 
-  .email__title /*+ для компьютера*/ {
+  .contacts__email-title /*+ для компьютера*/ {
     font-size: 17px;
   }
 
-  .email__link /*+ для компьютера*/ {
+  .contacts__email-link /*+ для компьютера*/ {
     font-size: 17px;
   }
 
@@ -125,16 +138,16 @@
     padding-top: 0;
   }
 
-  .adress__title {
+  .contacts__address-title {
     margin-top: 0;
     font-size: 17px;
   }
 
-  .adress__description-wrapper /*+ для компьютера*/ {
+  .contacts__address-wrapper /*+ для компьютера*/ {
     width: 260px;
   }
 
-  .adress__description {
+  .contacts__address-description {
     font-size: 17px;
     width: 228px;
     margin-top: 0;
@@ -182,11 +195,11 @@
     padding-top: 10px;
   }
 
-  .adress__title {
+  .contacts__address-title {
     margin-top: 17px;
   }
 
-  .adress__description {
+  .contacts__address-description {
     margin-top: 17px;
     margin-left: 25px;
   }
