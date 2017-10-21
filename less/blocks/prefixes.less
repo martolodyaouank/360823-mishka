@@ -1,191 +1,102 @@
 ::-webkit-input-placeholder {
   color: fade(@text-color, 30%);
-  font-family: $baseFontFamily;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 17px;
   line-height: 18px;
-
-  @media @width-tablet {
-    font-size: 19px;
-    line-height: 18px;
-  }
 }
 
 ::-moz-placeholder {
   color: fade(@text-color, 30%);
-  font-family: $baseFontFamily;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 17px;
   line-height: 18px;
-
-  @media @width-tablet {
-    font-size: 19px;
-    line-height: 18px;
-  }
 }
 
 :-moz-placeholder {
   color: fade(@text-color, 30%);
-  font-family: $baseFontFamily;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 17px;
   line-height: 18px;
-
-  @media @width-tablet {
-    font-size: 19px;
-    line-height: 18px;
-  }
 }
 
 :-ms-input-placeholder {
   color: fade(@text-color, 30%);
-  font-family: $baseFontFamily;
-  font-size: 17px;
-  line-height: 18px;
-
-  @media @width-tablet {
-    font-size: 19px;
-    line-height: 18px;
-  }
-}
-
-textarea::-webkit-input-placeholder {
-  color: fade(@text-color, 30%);
-  font-family: $baseFontFamily;
-  font-size: 17px;
-  line-height: 18px;
-
-  @media @width-tablet {
-    font-size: 19px;
-    line-height: 18px;
-  }
-}
-
-textarea::-moz-placeholder {
-  color: fade(@text-color, 30%);
-  font-family: $baseFontFamily;
-  font-size: 17px;
-  line-height: 18px;
-
-  @media @width-tablet {
-    font-size: 19px;
-    line-height: 18px;
-  }
-}
-
-textarea:-moz-placeholder {
-  color: fade(@text-color, 30%);
-  font-family: $baseFontFamily;
-  font-size: 17px;
-  line-height: 18px;
-
-  @media @width-tablet {
-    font-size: 19px;
-    line-height: 18px;
-  }
-}
-
-textarea:-ms-input-placeholder {
-  color: fade(@text-color, 30%);
-  font-family: $baseFontFamily;
-  font-size: 17px;
-  line-height: 18px;
-
-  @media @width-tablet {
-    font-size: 19px;
-    line-height: 18px;
-  }
-}
-
-::-webkit-input-placeholder {
-  color: fade(@text-color, 30%);
-  font-family: $baseFontFamily;
-  font-size: 17px;
-  line-height: 18px;
-
-  @media @width-tablet {
-    font-size: 19px;
-    line-height: 18px;
-  }
-}
-
-::-moz-placeholder {
-  color: fade(@text-color, 30%);
-  font-family: $baseFontFamily;
-  font-size: 17px;
-  line-height: 18px;
-
-  @media @width-tablet {
-    font-size: 19px;
-    line-height: 18px;
-  }
-}
-
-:-moz-placeholder {
-  color: fade(@text-color, 30%);
-  font-family: $baseFontFamily;
-  font-size: 17px;
-  line-height: 18px;
-
-  @media @width-tablet {
-    font-size: 19px;
-    line-height: 18px;
-  }
-}
-
-:-ms-input-placeholder {
-  color: fade(@text-color, 30%);
-  font-family: $baseFontFamily;
-  font-size: 17px;
-  line-height: 18px;
-
-  @media @width-tablet {
-    font-size: 19px;
-    line-height: 18px;
-  }
-}
-
-textarea::-webkit-input-placeholder {
-  color: fade(@text-color, 30%);
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 17px;
   line-height: 18px;
+}
 
-  @media @width-tablet {
-    font-size: 19px;
+textarea {
+  &::-webkit-input-placeholder {
+    color: fade(@text-color, 30%);
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 17px;
+    line-height: 18px;
+  }
+
+  &::-moz-placeholder {
+    color: fade(@text-color, 30%);
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 17px;
+    line-height: 18px;
+  }
+
+  &:-moz-placeholder {
+    color: fade(@text-color, 30%);
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 17px;
+    line-height: 18px;
+  }
+
+  &:-ms-input-placeholder {
+    color: fade(@text-color, 30%);
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 17px;
     line-height: 18px;
   }
 }
 
-textarea::-moz-placeholder {
-  color: fade(@text-color, 30%);
-  font-family: $baseFontFamily;
-  font-size: 17px;
-  line-height: 18px;
 
-  @media @width-tablet {
+@media @width-tablet {
+  &::-webkit-input-placeholder {
     font-size: 19px;
     line-height: 18px;
   }
-}
 
-textarea:-moz-placeholder {
-  color: fade(@text-color, 30%);
-  font-family: $baseFontFamily;
-  font-size: 17px;
-  line-height: 18px;
-
-  @media @width-tablet {
+  &::-moz-placeholder {
     font-size: 19px;
     line-height: 18px;
   }
-}
 
-textarea:-ms-input-placeholder {
-  color: fade(@text-color, 30%);
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 17px;
-  line-height: 18px;
-
-  @media @width-tablet {
+  &:-moz-placeholder {
     font-size: 19px;
     line-height: 18px;
+  }
+
+  &:-ms-input-placeholder {
+    font-size: 19px;
+    line-height: 18px;
+  }
+
+  textarea {
+    &::-webkit-input-placeholder {
+      font-size: 19px;
+      line-height: 18px;
+    }
+
+    &::-moz-placeholder {
+      font-size: 19px;
+      line-height: 18px;
+    }
+
+    &:-moz-placeholder {
+      font-size: 19px;
+      line-height: 18px;
+    }
+
+    &:-ms-input-placeholder {
+      font-size: 19px;
+      line-height: 18px;
+    }
   }
 }
