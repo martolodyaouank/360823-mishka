@@ -25,6 +25,9 @@
 
 .page-footer__button {
   position: relative;
+  display: inline-block;
+  width: 10px;
+  height: 30px;
 }
 
 .page-footer__icon {
@@ -49,6 +52,20 @@
 
   &--logo {
     display: none;
+  }
+
+  &--instagram {
+    top: 25px;
+  }
+
+  &--facebook {
+    top: 25px;
+    margin-left: 2px;
+  }
+
+  &--twitter {
+    top: 25px;
+    margin-left: 7px;
   }
 }
 
@@ -95,6 +112,7 @@
     &--html {
       fill: @aqua;
       left: 150px;
+      top: -12px;
     }
 
     &--logo {
@@ -102,7 +120,16 @@
     }
 
     &--instagram {
+      top: 55px;
       left: -12px;
+    }
+
+    &--facebook {
+      top: 55px;
+    }
+
+    &--twitter {
+      top: 55px;
     }
   }
 
