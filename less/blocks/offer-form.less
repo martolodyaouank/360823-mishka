@@ -71,6 +71,53 @@
     }
   }
 
+  &--radio {
+    position: relative;
+
+    &:hover::after {
+      box-shadow: 0 0 0 2px @aqua;
+    }
+
+    &:active::after {
+      box-shadow: 0 0 0 2px @grey-78;
+    }
+
+    &::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -60px;
+    width: 16px;
+    height: 16px;
+    background-color: @white;
+    border: 10px solid @white;
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px @grey-27;
+    }
+  }
+
+  &--checkbox {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -10px;
+      left: -60px;
+      width: 36px;
+      height: 36px;
+      border: 2px solid @grey-27;
+    }
+
+    &:hover::before {
+      border: 2px solid @aqua;
+    }
+
+    &:active::before {
+      border: 2px solid @grey-78;
+    }
+  }
+
   &--extra {
     padding-bottom: 0;
 
@@ -166,56 +213,9 @@
   padding-left: 62px;
   padding-bottom: 20px;
 
-  &--radio-text {
-    position: relative;
-
-    &:hover::after {
-      box-shadow: 0 0 0 2px @aqua;
-    }
-
-    &:active::after {
-      box-shadow: 0 0 0 2px @grey-78;
-    }
-
-    &::after {
-    content: "";
-    position: absolute;
-    top: -5px;
-    left: -60px;
-    width: 16px;
-    height: 16px;
-    background-color: @white;
-    border: 10px solid @white;
-    border-radius: 50%;
-    box-shadow: 0 0 0 2px @grey-27;
-    }
-  }
-
   &--checkbox {
     input[type="checkbox"] {
       display: none;
-    }
-  }
-
-  &--checkbox-text {
-    position: relative;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: -10px;
-      left: -60px;
-      width: 36px;
-      height: 36px;
-      border: 2px solid @grey-27;
-    }
-
-    &:hover::before {
-      border: 2px solid @aqua;
-    }
-
-    &:active::before {
-      border: 2px solid @grey-78;
     }
   }
 }
@@ -225,13 +225,13 @@
 }
 
 
-input[type="radio"]:checked + .offer-form__button--radio-text {
+input[type="radio"]:checked + .offer-form__text--radio {
   &::after {
     background-color: @aqua;
   }
 }
 
-input[type="checkbox"]:checked + .offer-form__button--checkbox-text {
+input[type="checkbox"]:checked + .offer-form__text--checkbox {
   &::before {
     background-image: url("../img/icon-tick.svg");
     background-repeat: no-repeat;
@@ -357,6 +357,25 @@ input[type="checkbox"]:checked + .offer-form__button--checkbox-text {
     font-size: 19px;
     width: 501px;
 
+    &--radio {
+      &::after {
+        top: -10px;
+        margin-left: -20px;
+        width: 22px;
+        height: 22px;
+        border: 13px solid @white;
+      }
+    }
+
+    &--checkbox {
+      &::before {
+        top: -10px;
+        left: -80px;
+        width: 48px;
+        height: 48px;
+      }
+    }
+
     &--phone {
       padding-bottom: 10px;
     }
@@ -420,25 +439,6 @@ input[type="checkbox"]:checked + .offer-form__button--checkbox-text {
     &--checkbox {
       width: 200px;
     }
-
-    &--radio-text {
-      &::after {
-        top: -10px;
-        margin-left: -20px;
-        width: 22px;
-        height: 22px;
-        border: 13px solid @white;
-      }
-    }
-
-    &--checkbox-text {
-      &::before {
-        top: -10px;
-        left: -80px;
-        width: 48px;
-        height: 48px;
-      }
-    }
   }
 
   .offer-form__button-submit {
@@ -446,7 +446,7 @@ input[type="checkbox"]:checked + .offer-form__button--checkbox-text {
     width: 230px;
   }
 
-  input[type="checkbox"]:checked + .offer-form__button--checkbox-text {
+  input[type="checkbox"]:checked + .offer-form__text--checkbox {
     &::before {
       background-size: 35px 25px;
     }
@@ -520,6 +520,15 @@ input[type="checkbox"]:checked + .offer-form__button--checkbox-text {
       margin-left: 25px;
     }
 
+    &--checkbox {
+      &::before {
+        top: -10px;
+        left: -80px;
+        width: 48px;
+        height: 48px;
+      }
+    }
+
     &--names-name {
       input {
         width: 626px;
@@ -555,16 +564,6 @@ input[type="checkbox"]:checked + .offer-form__button--checkbox-text {
     }
   }
 
-  .offer-form__button {
-    &--checkbox-text {
-      &::before {
-        top: -10px;
-        left: -80px;
-        width: 48px;
-        height: 48px;
-      }
-    }
-  }
 
   .offer-form__explanatory-text {
     margin-bottom: 0;
