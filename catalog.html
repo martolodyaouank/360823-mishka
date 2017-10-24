@@ -93,7 +93,7 @@
             <a class="main-navigation__link main-navigation__link--catalog">Каталог товаров</a>
           </div>
         </li>
-        <li class="main-navigation__item main-navigation--catalog-item">
+        <li class="main-navigation__item main-navigation__item--order">
           <div class="main-navigation__link-wrapper">
             <a class="main-navigation__link main-navigation__link--order" href="form.html">Вязание на заказ</a>
           </div>
@@ -102,12 +102,12 @@
       <ul class="main-navigation main-navigation--extra">
         <li class="main-navigation__item main-navigation__item--extra">
           <div class="main-navigation__link-wrapper">
-            <a class="main-navigation__link main-navigation__link--new">Новые поступления</a>
+            <a class="main-navigation__link main-navigation__link--new" href="#">Новые поступления</a>
           </div>
         </li>
         <li class="main-navigation__item main-navigation__item--extra">
           <div class="main-navigation__link-wrapper">
-            <a class="main-navigation__link main-navigation__link--sale">Распродажа</a>
+            <a class="main-navigation__link main-navigation__link--sale" href="#">Распродажа</a>
           </div>
         </li>
       </ul>
@@ -136,7 +136,7 @@
         <h1 class="catalog__title">Каталог товаров</h1>
       </div>
     </section>
-    <section class="products">
+    <section class="products products-info">
       <div class="products__container">
         <div class="products__item">
           <a class="products__image-link" href="#">
@@ -153,7 +153,8 @@
             </div>
             <div class="products__offer">
               <p class="products__price">1 200 руб.</p>
-              <a class="products__button" href="#">
+              <a class="products__button" href="order.html">
+                Добавить в корзину
                 <svg class="products__icon" width="20" height="20"><use xlink:href="#icon-cart"></use></svg>
               </a>
             </div>
@@ -174,7 +175,8 @@
             </div>
             <div class="products__offer">
               <p class="products__price">690 руб.</p>
-              <a class="products__button" href="#">
+              <a class="products__button" href="order.html">
+                Добавить в корзину
                 <svg class="products__icon" width="20" height="20"><use xlink:href="#icon-cart"></use></svg>
               </a>
             </div>
@@ -195,7 +197,8 @@
             </div>
             <div class="products__offer">
               <p class="products__price products__price--toy-basket">1 500 руб.</p>
-              <a class="products__button" href="#">
+              <a class="products__button" href="order.html">
+                Добавить в корзину
                 <svg class="products__icon" width="20" height="20"><use xlink:href="#icon-cart"></use></svg>
               </a>
             </div>
@@ -278,7 +281,7 @@
       </form>
     </div>
   </section>
-  <div class="goods-popup__overlay"></div>
+  <div class="overlay"></div>
   <script type="text/javascript" src="js/script.min.js"></script>
 </body>
 
